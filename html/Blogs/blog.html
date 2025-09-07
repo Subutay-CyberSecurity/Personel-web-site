@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subutay Ülgen | Siber Güvenlik Uzmanı</title>
+  <link rel="stylesheet" href="../../../css/blogs.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo-group">
+          <h1 class="logo">Subutay Ülgen</h1>
+          <p class="logo-text">Web Uygulama Güvenliği Uzmanı</p>
+        </div>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html"><i class="fas fa-user"></i> Hakkımda</a></li>
+            <li><a href="../../references.html"><i class="fas fa-award"></i> Referanslar</a></li>
+            <li><a href="../../projects.html"><i class="fas fa-code"></i> Projeler</a></li>
+            <li><a href="../../services.html"><i class="fas fa-cogs"></i> Hizmetler</a></li>
+            <li><a href="../../blog.html" class="active"><i class="fas fa-blog"></i> Blog</a></li>
+            <li><a href="../../contact-me.html"><i class="fas fa-envelope"></i> İletişim</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+  <h1 id="giris">🔐 Pentesterler için Not Almanın Önemi</h1>
+  
+  <br>
+  
+  <p>
+    Pentest süreci boyunca yüzlerce farklı test, komut, çıktı ve bulgu elde edilir.
+    Bu bilgilerin unutulmaması, doğru şekilde raporlanması ve gerektiğinde tekrar kullanılabilmesi için
+    <strong>not almak kritik öneme sahiptir</strong>.
+    Çoğu pentesterin en az bir kere yaşadığı senaryo şudur: günlerce uğraştığın bir sistemde
+    bulduğun açığı rapora koymayı unutursun ya da aynı komutu 3 kere tekrar denersin çünkü ilk çıktıyı kaydetmemişsindir.
+    İşte bu noktada düzenli not tutmanın önemi ortaya çıkar.
+  </p>
+
+  <br>
+
+  <p>
+    İyi not tutan pentester, sürecini kontrollü ve profesyonel yönetir.
+    Not almayan ise panik yaşar, “hangi payload çalışmıştı ya?” veya
+    “şu portu taramış mıydım?” diye kendi kendini yıpratır.
+  </p>
+
+  <br>
+  <br>
+
+  <img src="fotolar/ilk-foto.png":>
+ 
+   <br>
+   <br>
+   <br>
+   <br>
+
+    <h2 style="text-align:center;">İste bu yüzden bu blogda 
+      pentest esnasında hangi araçlarla, hangi yöntemlerle,
+      nasıl ve niye not tutmalı olduğumuzu size anlatıcağım.</h2>
+
+    
+    <br>
+    <br>
+
+    <h3>İçindekiler</h3>
+    <ol class="toc">
+        <li><a href="#giris">Giriş</a></li>
+        <li><a href="#not-onemi">Not Tutmanın Önemi</a></li>
+        <li><a href="#hangi-bilgiler">Hangi Bilgiler Not Edilmeli?</a></li>
+        <li><a href="#yontemler">Not Tutma Yöntemleri ve Araçları</a></li>
+        <li><a href="#taktikler">İyi Not Tutma Taktikleri</a></li>
+        <li><a href="#kapanis">Kapanış</a></li>
+     </ol>
+
+    <br>
+    <br>
+    <br>
+
+
+  <h2 id="not-önemi">2. Not Tutmanın Önemi</h2>
+ 
+  <br>
+
+  <p style="display: blox; margin: 0 auto;">“En zeki insan bile, binlerce bilgiyi hafızasında mükemmel bir şekilde tutamaz.” </p>  
+  
+  <br> 
+  
+  <p>Bu söz, özellikle sızma testlerinde çok daha anlam kazanır. Çünkü bir test sürecinde yüzlerce potansiyel zafiyet, binlerce satır çıktı ve onlarca farklı IP adresiyle uğraşmak zorunda kalırsınız. Bu yoğun bilgi akışı içerisinde not tutmak, yalnızca süreci düzenli hale getirmek için değil, aynı zamanda testin başarısını garanti altına almak için kritik öneme sahiptir. Not almak, dağınık bilgilerin sistemli bir şekilde kaydedilmesini ve gerektiğinde hızlıca geri dönülmesini mümkün kılar.</p><br><br> <p>İnsan hafızasının sınırlı olması, not tutmayı vazgeçilmez hale getirir. Testin başında keşfettiğiniz bir zafiyeti, testin ilerleyen aşamalarında unutmanız veya detaylarını karıştırmanız oldukça olasıdır. Bu noktada notlar, hafıza boşluklarını doldurarak bilginin kaybolmasının önüne geçer. Nitekim Scientific American’da yayımlanan “Why Writing by Hand Is Better for Memory and Learning” başlıklı makalede de belirtildiği üzere, bilgiyi yazmak veya dijital ortamda düzenlemek beynin bilgiyi daha kalıcı şekilde işlemesine yardımcı olur. Bu, özellikle karmaşık ilişkilerin bulunduğu sızma testlerinde kritik bir avantaj sağlar.</p><br><br> <p>Not tutmanın bir diğer önemli faydası ise raporlama sürecinde ortaya çıkar. Testin sonunda hazırlayacağınız raporun omurgasını, süreç boyunca aldığınız notlar oluşturur. Düzenli tutulmuş notlar sayesinde bulgular, kanıtlar ve öneriler hazır bir şekilde elinizin altında olur. Böylece raporlama aşaması hem daha hızlı hem de daha kaliteli hale gelir. Eksiksiz ve sistemli notlar, müşteri veya kurum nezdinde raporun güvenilirliğini artırır ve profesyonel bir izlenim bırakır.</p><br><br> <p>Son olarak, notların tekrar kullanılabilirliği ve güvenlik açısından sağladığı faydalar göz ardı edilemez. Daha önce karşılaştığınız zafiyetler, kullandığınız etkili komutlar veya geliştirdiğiniz özel senaryolar, notlarınıza kaydedildiğinde sonraki projelerde değerli bir referans haline gelir. Bu durum hem verimliliğinizi artırır hem de test süreçlerini standartlaştırmanıza yardımcı olur. Ayrıca detaylı notlar, gerektiğinde yasal veya denetim süreçlerinde kanıt olarak da kullanılabilir. Hangi tarihte, hangi IP adresine, hangi komutlarla müdahale ettiğinizi kaydetmek, hem sizin hem de çalıştığınız kurumun sorumluluğunu güvence altına alır.</p>
+
+<br>
+<br>
+<br>
+
+    <h2 id="hangi-bilgiler">3. Hangi Bilgiler Not Edilmeli?</h2>
+
+<br>
+    
+    <p>Not tutarken her şeyi kaydetmeye çalışmak yerine, kritik ve anlamlı bilgileri ayıklamak önemlidir. İşte mutlaka not almanız gerekenler:</p>
+
+<br>
+    
+    <ul>
+        <li><strong>Hedef Bilgileri:</strong> Teste başladığınızda hedefin temel bilgilerini (IP adresleri, alan adları, hedef kurumun adı, testin kapsamı) mutlaka not edin.</li><br>
+        <li><strong>Keşif (Recon) Bilgileri:</strong> Hedefle ilgili toplanan tüm bilgileri (alt alan adları, açık portlar, çalışan servisler, versiyon bilgileri, çalışan sistemlerin işletim sistemleri) kaydedin.</li><br>
+        <li><strong>Kullanılan Araçlar ve Komutlar:</strong> Hangi aracı (Nmap, Nessus, Metasploit, vb.) hangi parametrelerle çalıştırdığınızı yazın. <br> Örneğin; <br> <code>nmap -sV -p- -T4 --script=http-title -oA nmap_scan 192.168.1.1</code>.</li><br>
+        <li><strong>Çıktılar ve Loglar:</strong> Bir komutun veya aracın çıktısını doğrudan notlarınıza yapıştırın. Bu, daha sonra bulgularınızı doğrulamanız için kesin kanıtlar sağlar.</li><br>  
+        <li><strong>Rapor İçin Kritik Notlar:</strong> Bir zafiyet bulduğunuzda, onu nasıl sömürdüğünüzü, bulgunun risk seviyesini, ilgili ekran görüntülerini ve olası çözüm önerilerini detaylı bir şekilde not alın.</li><br>    
+    </ul>
+
+    <br>
+    <h3>Bu sizler için olusturduğum 2 örnek</h3>
+    <br>
+    
+<img style="height: 100%; width: 100%;" src="fotolar/cherry-tree.png" alt="">
+    
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    
+    <h2>4. Not Tutma Yöntemlerinin ve Araçlarının Karşılaştırması: CherryTree ve Logseq</h2>
+    
+    <br>
+    <p>Not tutma araçları, sızma testleri için özel olarak tasarlanmamış olsa da, doğru aracı seçmek süreci büyük ölçüde kolaylaştırabilir. CherryTree ve Logseq bu konuda popüler seçeneklerdir. Sizler için önce iki farklı yaklsımı anlattım sonra da bu iki programı karsılastırdım.</p>
+
+    <br>
+    <br>
+
+<p>Web uygulaması güvenlik testi (WAS pentest) yaparken not alma ihtiyacı genellikle bulguların teknik detayları, açıklama adımları, PoC kodları ve yeniden üretme talimatları etrafında yoğunlaşır; bu bağlamda CherryTree, hiyerarşik yapısı ve zengin metin desteği sayesinde çok kullanışlıdır. CherryTree ile her hedef uygulama, her endpoint veya her bulgu için ayrı bir düğüm (node) oluşturabilir, içine kod blokları, ekran görüntü notları ve tablolar ekleyebilirsiniz; böylece bir bulgunun tüm teknik ayrıntılarını tek bir yerde, düzenli ve hızlı erişilebilir biçimde tutmak mümkün olur. Masaüstü odaklı bir araç olarak CherryTree, ağır metin formatlama, detaylı alt başlıklar ve hızlı kopyala-yapıştır için uygundur; eğer işiniz ağırlıklı olarak laboratuvar ortamında veya tek cihaz/masaüstü üzerinde geçiyorsa, mobil senkronizasyonun eksikliği genellikle sorun yaratmaz ve basit, az katmanlı bir iş akışı sağlar.</p><br><br> <p>Öte yandan geniş kapsamlı bir penetrasyon testi (web + network + host + altyapı) yürütüyorsanız, bulgular arasındaki ilişkileri, zafiyetlerin birbirini nasıl tetiklediğini ve keşif çıktılarının ilerleyen aşamalardaki etkisini takip etmek önem kazanır; bu noktada Logseq’in bağlantı odaklı yapısı büyük avantaj sağlar. Logseq, sayfalar arası çift yönlü bağlantılar (backlink) ve ağ grafiği görselleştirmesiyle farklı sistemler, servisler ve keşif notları arasındaki bağıntıları net bir şekilde ortaya koyar; örneğin bir web zafiyetinin aynı zamanda ağ topolojisinde hangi sunucuya etki ettiğini veya belirli bir credential sızıntısının hangi hostlara yayıldığını kolayca gösterebilirsiniz. Ayrıca Logseq’in açık kaynak olması, not veritabanınızı gerektiğinde scriptlerle işleyebilme, eklentilerle otomasyon ekleyebilme veya kurum içi özel araçlarla entegre edebilme gibi esneklikler sunar; bu, kurum politikaları veya veri sahipliği endişeleri olan güvenlik ekipleri için önemli bir artıdır.</p><br><br> <p>Pratik iş akışı açısından düşünüldüğünde CherryTree, tek bir hedef veya uygulama üzerinde derinlemesine raporlama yaparken süratli, odaklanmış ve ayrıntı merkezli bir kayıt deneyimi sağlar: keşiften exploit geliştirmeye kadar geçen süreçte ortaya çıkan ham komutlar, PoC’ler ve adım adım yeniden üretme notları tek bir hiyerarşik ağacın altına rahatça yerleştirilebilir. Logseq ise bu ham veriyi daha geniş bir bağlam içine oturtmak, keşiflerin neden ve sonuç ilişkilerini kurmak, zamanla ortaya çıkan korelasyonları görselleştirmek ve farklı ekip üyeleri arasında bilgi paylaşımını kolaylaştırmak için idealdir; örneğin bir ağ keşfi notunu ilgili uygulama zafiyetiyle, bir kullanıcı hesabının sızıntısıyla veya bir konfigürasyon hatasıyla ilişkilendirmek birkaç bağlantı tıklamasıyla yapılabilir. Bu yüzden basit, tek hedefe odaklı çalışmalar için CherryTree’in sadeliği ve yerel zengin metin desteği, çok disiplinli ve geniş ölçekli testler için ise Logseq’in bağlantı/graph tabanlı düşünme yapısı daha uygundur.</p><br><br> <p>Sonuç olarak tercih yaparken önemli olan ihtiyaçlarınızı ve iş akışınızı netleştirmektir: eğer gündelik işinizin çoğu web uygulamalarını derinlemesine incelemek, PoC üretmek ve detaylı teknik raporlar yazmaksa CherryTree sizi hızlandırır; ancak testleriniz çoklu domain, network ve host bileşenlerini kapsıyor, ekip içinde ilişki tabanlı bilgi paylaşımı ve zaman içinde gelişen bulguları görselleştirme ihtiyacı varsa Logseq daha doğru bir seçim olacaktır. Ayrıca Logseq’in açık kaynak olması, veri taşıma, otomasyon ve kurumsal entegrasyon gereksinimleri doğduğunda size ekstra esneklik sağlar; CherryTree ise minimal kurulum ve doğrudan masaüstü kullanıma uygun, ağır formatlama gerektiren teknik notlar için pratik bir alternatiftir. Hangi aracı seçerseniz seçin, önemli olan not alma disiplinini oturtmak—bulguları tutarlı şekilde etiketlemek, yeniden üretme adımlarını net yazmak ve gerektiğinde hızlıca erişilecek bir yapı kurmaktır.</p>
+
+    <br>
+    <br>
+    <br>
+
+  <h3>🍒 CherryTree: Klasikçi Pentesterlerin Gözdesi</h3>
+  <p>
+    CherryTree, hiyerarşik yapıda not tutmaya yarayan açık kaynaklı bir araçtır.
+    Daha çok “klasik düzen” seven, notlarını tek bir yerde toplamak isteyenler için biçilmiş kaftandır.
+    Şöyle düşün: bilgisayarındaki dosya yapısına benzer şekilde, notlarını klasör ve alt klasörler (node) içinde saklarsın.
+  </p>
+
+  <h4>⚙️ CherryTree Özellikleri</h4>
+  <ul>
+    <li>📂 <strong>Ağaç yapısı:</strong> Her proje için bir klasör, her bulgu için alt klasör açabilirsin.</li>
+    <li>📝 <strong>Zengin metin desteği:</strong> Renk, tablo, link… rapor hazırlarken işine yarar.</li>
+    <li>💻 <strong>Kod blokları:</strong> Python, Bash, PowerShell gibi diller için syntax highlighting sağlar.</li>
+    <li>🔎 <strong>Arama:</strong> Tüm notlarının içinde tek tıkla arama yapabilirsin.</li>
+    <li>🔐 <strong>Şifreleme:</strong> Not dosyana parola koyabilirsin, müşteri bilgilerini korur.</li>
+    <li>📦 <strong>Tek dosya mantığı:</strong> Tüm notlar <code>.ctb</code> dosyasında saklanır, yedeklemek kolaydır.</li>
+  </ul>
+<br>
+
+
+  <h2>🛠️ CherryTree ile Not Örneği</h2>
+  
+<br>
+
+  <img style="height: 100%; width: 100%" src="fotolar/cherry-tree.png">
+<br>
+
+<br>
+
+
+
+  <p>
+    Gördüğün gibi, her şeyi düzenli tutmak mümkün.
+    Ama dezavantajı şu: tek dosya mantığı bazen hantallaşabiliyor.
+    Yani yüzlerce MB’lık tek bir dosya ile uğraşmak zor olabilir.
+  </p>
+
+<br>
+
+<br>
+
+  <h3>🌳 Logseq: Modern ve Esnek Yaklaşım</h3>
+  <p>
+    Logseq ise “networked thinking” mantığı üzerine kurulu.
+    Yani notların birbirine bağlanıyor, sen de adeta bir “bilgi grafiği” oluşturuyorsun.
+    Markdown tabanlı çalışıyor ve her şey basit <code>.md</code> dosyalarında tutuluyor.
+    Bu sayede notların platform bağımsız oluyor, istediğin editörle açabiliyorsun.
+  </p>
+
+  <h4>⚙️ Logseq Özellikleri</h4>
+<br>
+
+  <ul>
+    <li>📖 <strong>Markdown & Org-mode desteği:</strong> Hafif, taşınabilir, uzun ömürlü dosyalar.</li>
+    <li>🔗 <strong>Bağlantılı not sistemi:</strong> Bir bulguyu ilgili servise, CVE’ye ya da rapor bölümüne bağlayabilirsin.</li>
+    <li>🗂️ <strong>Grafik yaklaşımı:</strong> Klasör yok, ama notlar arası linkler var.</li>
+    <li>🛡️ <strong>Gizlilik:</strong> Veriler sende kalıyor, bulut zorunluluğu yok.</li>
+    <li>🎨 <strong>Kişiselleştirme:</strong> Tema, eklenti, kısayollar… tamamen özelleştirilebilir.</li>
+    <li>📅 <strong>Günlük notlar:</strong> Bugün ne yaptın? Açıyorsun ve otomatik bir sayfan var.</li>
+  </ul>
+<br>
+
+  <h2>🛠️ Logseq ile Tutulmus Not Örneği</h2>
+<br>
+
+  <img style="height: 100%; width: 100%" src="fotolar/logseq.png">
+  <br>
+  <br>
+  
+
+  <p>
+    Burada en güzel kısım şu: bir bulguyu birden fazla başlığa bağlayabilirsin.
+    Yani bir SQL injection hem “Tarama” hem “Exploitation” kısmında görünür.
+    Bu da ilişkisel düşünceyi kolaylaştırır.
+  </p>
+
+  <br>
+
+<br>
+
+
+  <h2>🤝 Karşılaştırma: CherryTree vs Logseq</h2>
+  <br>
+
+<br>
+
+<table border="1" cellpadding="8" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Özellik</th>
+        <th>🍒 CherryTree</th>
+        <th>🌳 Logseq</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Yapı</td>
+        <td>Ağaç (klasör benzeri)</td>
+        <td>Bağlantılı grafik</td>
+      </tr>
+      <tr>
+        <td>Dosya tipi</td>
+        <td>.ctb tek dosya</td>
+        <td>.md düz metin</td>
+      </tr>
+      <tr>
+        <td>Kullanım tipi</td>
+        <td>Klasik, sade</td>
+        <td>Esnek, modern</td>
+      </tr>
+      <tr>
+        <td>Öğrenme eğrisi</td>
+        <td>Düşük (hemen başlanır)</td>
+        <td>Orta (bağlantı mantığını kavramak lazım)</td>
+      </tr>
+      <tr>
+        <td>Güvenlik</td>
+        <td>Dosya şifreleme</td>
+        <td>Veriler lokalde</td>
+      </tr>
+    </tbody>
+  </table>
+<br>
+<br>
+
+
+
+    <h2>5. İyi Not Tutma Pratikleri</h2>
+
+<br>
+    <br>
+
+
+    <ul> <li><strong>Kısa ve Öz Yaz:</strong> 10 satır yerine 2 satırla özet çıkarın. Notlarınızda yalnızca gerekli bilgiyi tutun; gereksiz ayrıntılar ileride kafa karıştırır.</li><br> <li><strong>Komutları Kaydet:</strong> Çalıştırdığınız her nmap, gobuster, sqlmap vb. komutunu saklayın. Yanına tarih, hedef ve amaç ekleyin ki daha sonra aynı adımları kolayca tekrarlayabilin.</li><br> <li><strong>Çıktıları Not Et:</strong> Terminal çıktısını <pre> içine alın. Bu sayede çıktılar biçimlendirilmiş, kolay okunur ve kopyalanabilir halde kalır.</li><br> <li><strong>Adım Adım İlerleyin:</strong> “Önce port taradım, sonra web app’i test ettim…” şeklinde kronolojik bir düzen kurun. Bu yöntem, rapor yazarken mantıksal akışı da kolaylaştırır.</li><br> <li><strong>Renk Kodları Kullanın:</strong> Kritik bulguları kırmızı, bilgi amaçlı notları maviyle işaretleyin. Böylece raporunuzu veya notlarınızı hızlıca tararken öncelikli kısımlar hemen öne çıkar.</li><br> <li><strong>Kaynak Linki Ekleyin:</strong> CVE kayıtları, Exploit-DB sayfaları veya ilgili blog yazılarını notlara bağlayın. Bu, bulgularınızı güçlendirir ve doğrulama için referans sağlar.</li><br> <li><strong>Günlük Log Tutun:</strong> Her günün testlerini ayrı bir başlık altında saklayın. Bu, testin zaman çizelgesini netleştirir ve hangi aşamada ne yapıldığını şeffaf hale getirir.</li><br> <li><strong>Tutarlılık Sağlayın:</strong> Her test için aynı not şablonunu kullanın. Bu, not tutmayı otomatikleştirir, düzeni artırır ve gerekli bilgiyi bulmayı kolaylaştırır.</li><br> <li><strong>Görselleştirme Ekleyin:</strong> Notlarınıza ekran görüntüleri, çizimler veya diyagramlar koyun. Özellikle karmaşık ağ topolojileri veya saldırı zincirleri bu şekilde daha anlaşılır hale gelir.</li><br> <li><strong>Gizlilik ve Güvenlik:</strong> Notlarınız hassas bilgiler içerir. Şifreleme kullanın, güvenli bir depoda saklayın. Test sonrası gereksiz bilgileri silmeyi veya arşivlemeyi unutmayın.</li><br> <li><strong>Notları Güncelleyin:</strong> Test ilerledikçe notlarınızı düzenli olarak güncelleyin. Yeni bulguları ekleyin, eski bilgileri düzeltin. Böylece test sonunda “temizlik” yerine sürekli düzen sağlanır.</li><br> </ul>
+<br>
+<br>
+<br>
+
+
+    <h2>6. Kapanış</h2>
+
+    <p>Etkili not tutma, bir pentester için sadece bir görev değil, bir yetkinlik ve uzun vadeli bir yatırımdır. Bu, sadece anlık hafıza boşluklarını doldurmakla kalmaz, aynı zamanda profesyonel gelişiminiz için sağlam bir temel oluşturur. Kendinize özgü bir sistem kurarak, her testten sonra daha iyi ve daha hızlı hale gelebilirsiniz. Unutmayın, en iyi sızma test uzmanları, sadece iyi saldıranlar değil, aynı zamanda iyi belgeleyenlerdir.</p>
+
+    <blockquote><strong>Bugün kendi not şablonunu oluştur ve testlerine başla. Güvenliğiniz ve verimliliğiniz için atacağınız en önemli adımlardan biri bu olacak.</strong></blockquote>
+
+
+  </main>
+
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="copyright">&copy; 2025 Subutay Ülgen - Tüm Hakları Saklıdır</div>
+        <div class="social-links">
+          <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
