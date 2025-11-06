@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🛡️ Siber Güvenlikte Hangi Programlama Dilleri Öğrenilmeli?</title>
+  <link rel="stylesheet" href="../../../css/blogs.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo-group">
+          <h1 class="logo">Subutay Ülgen</h1>
+          <p class="logo-text">Web Uygulama Güvenliği Uzmanı</p>
+        </div>
+        <div class="menu-toggle" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html"><i class="fas fa-user"></i> Hakkımda</a></li>
+            <li><a href="../../references.html"><i class="fas fa-award"></i> Referanslar</a></li>
+            <li><a href="../../projects.html"><i class="fas fa-code"></i> Projeler</a></li>
+            <li><a href="../../services.html"><i class="fas fa-cogs"></i> Hizmetler</a></li>
+            <li><a href="../../blog.html" class="active"><i class="fas fa-blog"></i> Blog</a></li>
+            <li><a href="../../contact-me.html"><i class="fas fa-envelope"></i> İletişim</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <article>
+        <h1 id="baslik">🛡️ Siber Güvenlik Alanında Hangi Programlama Dilleri Öğrenilmeli?</h1>
+
+        <p class="lead">
+          Siber güvenlik, sadece araç kullanmaktan ibaret değildir; bir sistemi gerçekten savunmak, saldırmak veya analiz etmek için,
+          o sistemin temelini oluşturan kodları anlamak gerekir. Bu rehber, kariyerine yeni başlayanlar veya uzmanlaşmak isteyenler için
+          hangi programlama dillerinin neden önemli olduğunu, hangi alanlarda kullanıldıklarını ve Türkçe kaynak önerilerini özetler.
+        </p>
+
+        <figure>
+          <img src="fotolar/cyber-languages-hero.png" alt="Siber güvenlik programlama dilleri" />
+        </figure>
+
+        <nav aria-labelledby="toc-heading">
+          <h3 id="toc-heading">İçindekiler</h3>
+          <ol class="toc">
+            <li><a href="#giris">Giriş</a></li>
+            <li><a href="#python">1. Python</a></li>
+            <li><a href="#c-cpp">2. C ve C++</a></li>
+            <li><a href="#javascript">3. JavaScript</a></li>
+            <li><a href="#go">4. Go (Golang)</a></li>
+            <li><a href="#assembly">5. Assembly</a></li>
+            <li><a href="#ozet">Özet ve Başlangıç Tavsiyesi</a></li>
+            <li><a href="#sonraki-adim">Sonraki Adımınız</a></li>
+          </ol>
+        </nav>
+
+        <section id="giris">
+          <h2>Giriş</h2>
+          <p>
+            Hangi alana yönelirseniz yönelin (Pentesting, Adli Bilişim, Tersine Mühendislik, Güvenli Yazılım Geliştirme),
+            programlama dilleri size vazgeçilmez bir uzmanlık katacaktır. Aşağıda her dil için kısa bir tarihçe, modern kullanım alanları
+            ve Türkçe kurs/öneri tablosu bulacaksınız.
+          </p>
+        </section>
+
+        <section id="python">
+          <h2>🐍 1. Python: Çok Yönlü Siber İsviçre Çakısı</h2>
+
+          <h4>Tarihçe ve Özgün Amaç</h4>
+          <p>
+            Guido van Rossum tarafından 1980'lerin sonunda geliştirilmeye başlanan Python; okunabilirlik, sade sözdizimi ve üretkenlik hedefiyle
+            oluşturuldu. Siber güvenlikte hızlı prototipleme ve otomasyon için ideal bir dildir.
+          </p>
+
+          <h4>Modern Siber Güvenlik Uygulamaları</h4>
+          <p>Python, zengin kütüphaneleri ve basit sözdizimi sayesinde güvenlik dünyasında en popüler dillerden biridir. Kullanım alanları:</p>
+          <ul>
+            <li><strong>Betik Oluşturma (Scripting):</strong> Log analizi, dosya işleme, otomatik zafiyet taramaları.</li>
+            <li><strong>Ağ Taraması ve Manipülasyonu:</strong> Scapy gibi kütüphanelerle paket oluşturma ve analiz.</li>
+            <li><strong>Web Uygulama Güvenliği:</strong> Requests, BeautifulSoup ile otomasyon ve PoC geliştirme.</li>
+            <li><strong>Malware Analizi:</strong> Küçük analiz araçları ve sandbox betikleri yazma.</li>
+          </ul>
+
+          <h4>🇹🇷 Önerilen Türkçe Kurs</h4>
+          <table class="courses" border="1" cellpadding="6" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Kurs Adı</th>
+                <th>Platform / Sağlayıcı</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Python ile Siber Güvenlik Uygulamaları</td>
+                <td>BTK Akademi (Ücretsiz)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <figure>
+            <img src="fotolar/python.png" alt="Python ile siber güvenlik" />
+          </figure>
+        </section>
+
+        <section id="c-cpp">
+          <h2>🖥️ 2. C ve C++: Sistemin Derinlikleri</h2>
+
+          <h4>Tarihçe ve Özgün Amaç</h4>
+          <p>
+            C, 1970'lerde Dennis Ritchie tarafından geliştirildi; donanıma yakın ve yüksek performanslı sistem programlama için tasarlandı.
+            C++ ise C'ye OOP özellikleri ekledi.
+          </p>
+
+          <h4>Modern Siber Güvenlik Uygulamaları</h4>
+          <p>Bellek yönetimi ve düşük seviye erişim sundukları için bu diller exploit geliştirme ve tersine mühendislikte temel dillerin başında gelir:</p>
+          <ul>
+            <li><strong>Exploit Geliştirme:</strong> Buffer overflow vb. bellek zafiyetlerini anlama ve sömürme.</li>
+            <li><strong>Tersine Mühendislik:</strong> Derlenmiş kodu yorumlayarak davranışı çözümleme.</li>
+            <li><strong>Yüksek Performanslı Araçlar:</strong> Nmap gibi araçların büyük kısmı C/C++ ile yazılmıştır.</li>
+            <li><strong>Kernel & Rootkit Geliştirme:</strong> Çekirdek düzeyinde etkileşim gerektiren çalışmalar.</li>
+          </ul>
+
+          <h4>🇹🇷 Önerilen Türkçe Kurs</h4>
+          <table class="courses" border="1" cellpadding="6" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Kurs Adı</th>
+                <th>Platform / Sağlayıcı</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Secure Coding in C &amp; C++ Eğitimi</td>
+                <td>Bilginç IT Academy (Temel Güvenli Kodlama)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <figure>
+            <img src="fotolar/c-cpp.png" alt="C ve C++ siber güvenlik" />
+          </figure>
+        </section>
+
+        <section id="javascript">
+          <h2>🕸️ 3. JavaScript: Web'in Kritik Zafiyet Alanı</h2>
+
+          <h4>Tarihçe ve Özgün Amaç</h4>
+          <p>
+            Brendan Eich tarafından 1995'te geliştirilen JavaScript, başlangıçta tarayıcı tarafında dinamik içerik için tasarlandı.
+            Node.js ile beraber sunucu tarafında da yaygınlaştı.
+          </p>
+
+          <h4>Modern Siber Güvenlik Uygulamaları</h4>
+          <p>Web uygulamalarının büyük çoğunluğunda JavaScript kullanıldığı için web güvenliğinde bu dili bilmek şarttır:</p>
+          <ul>
+            <li><strong>Web Pentesting:</strong> XSS, DOM tabanlı zafiyetler ve PoC geliştirme.</li>
+            <li><strong>Client-Side Analiz:</strong> Tarayıcıda çalışan kötü amaçlı scriptleri analiz etmek.</li>
+            <li><strong>Back-End Analizi (Node.js):</strong> Sunucu tarafı JS uygulamalarındaki zafiyetleri incelemek.</li>
+          </ul>
+
+          <h4>🇹🇷 Önerilen Türkçe Kurs</h4>
+          <table class="courses" border="1" cellpadding="6" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Kurs Adı</th>
+                <th>Platform / Sağlayıcı</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML, CSS, JavaScript ve React.js ile Uygulama Geliştirme</td>
+                <td>BilgeAdam Akademi (JavaScript Temelleri)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <figure>
+            <img src="fotolar/javascript.png" alt="JavaScript güvenlik" />
+          </figure>
+        </section>
+
+        <section id="go">
+          <h2>🚀 4. Go (Golang): Hız ve Modern Güvenlik Araçları</h2>
+
+          <h4>Tarihçe ve Özgün Amaç</h4>
+          <p>
+            Google tarafından 2009'da geliştirilen Go, yüksek performanslı, eşzamanlı ve taşınabilir ağ servisleri yazmak için tasarlandı.
+          </p>
+
+          <h4>Modern Siber Güvenlik Uygulamaları</h4>
+          <p>Go; hızlı, tek dosya halinde dağıtılabilir binaryler üretebildiği için modern güvenlik araçları geliştirmede popülerdir:</p>
+          <ul>
+            <li><strong>Hızlı Ağ Araçları:</strong> Port tarayıcıları, fuzzer'lar ve benzeri araçlar.</li>
+            <li><strong>Bulut Güvenliği:</strong> Bulut otomasyon ve güvenlik betikleri.</li>
+            <li><strong>Basit Malware Geliştirme:</strong> Taşınabilir, bağımsız çalışan ikililer.</li>
+            <li><strong>Altyapı Güvenliği:</strong> Dağıtık sistem ve API güvenliği testleri.</li>
+          </ul>
+
+          <h4>🇹🇷 Önerilen Türkçe Kurs</h4>
+          <table class="courses" border="1" cellpadding="6" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Kurs Adı</th>
+                <th>Platform / Sağlayıcı</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Temel Siber Güvenlik Uzmanlığı Sertifika Programı</td>
+                <td>İTÜ SEM / Mindset</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <figure>
+            <img src="fotolar/go.png" alt="Golang siber güvenlik" />
+          </figure>
+        </section>
+
+        <section id="assembly">
+          <h2>⚙️ 5. Assembly (Makine Dili): Temellere Hükmetmek</h2>
+
+          <h4>Tarihçe ve Özgün Amaç</h4>
+          <p>
+            Assembly, işlemciye en yakın dildir. Düşük seviyeli kontrol ve optimizasyon için kullanılır; tersine mühendislik ve exploit geliştirmede kritik öneme sahiptir.
+          </p>
+
+          <h4>Modern Siber Güvenlik Uygulamaları</h4>
+          <ul>
+            <li><strong>Tersine Mühendislik:</strong> Binary analizlerinde davranışı çözümlemek.</li>
+            <li><strong>Exploit Geliştirme (Shellcoding):</strong> Hafif, optimize edilmiş payloadlar yazmak.</li>
+            <li><strong>Zararlı Yazılım Analizi:</strong> Obfuscation'lı kodları anlamak.</li>
+            <li><strong>Performans Optimizasyonu:</strong> Kriptografik ve performans kritik modüller için.</li>
+          </ul>
+
+          <h4>🇹🇷 Önerilen Türkçe Kurs</h4>
+          <table class="courses" border="1" cellpadding="6" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Kurs Adı</th>
+                <th>Platform / Sağlayıcı</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Temel Linux Assembly Eğitimi</td>
+                <td>Türkiye Siber Güvenlik Kümelenmesi / Bilishim (YouTube, Ücretsiz)</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <figure>
+            <img src="fotolar/assembly.png" alt="Assembly ve tersine mühendislik" />
+          </figure>
+        </section>
+
+        <section id="ozet">
+          <h2>🔑 Özet ve Başlangıç Tavsiyesi</h2>
+          <p>
+            Başlangıç için önerilen yol şu şekilde:
+          </p>
+          <ol>
+            <li><strong>Öncelik:</strong> Python ile başlayın — hızlı araç yazımı ve otomasyon öğrenirsiniz.</li>
+            <li><strong>Temel Sistem Bilgisi:</strong> C öğrenerek bellek yönetimi ve sistem iç işleyişini kavrayın.</li>
+            <li><strong>Uzmanlaşma:</strong> Web güvenliği için JavaScript; altyapı/araç geliştirme için Go; düşük seviye analiz için Assembly.</li>
+          </ol>
+
+          <p>
+            Dil öğrenmek tek başına yeterli değildir; dil ile "güvenlik bakış açısını" birleştirebildiğinizde gerçek farkı yaratırsınız.
+          </p>
+        </section>
+
+        <section id="sonraki-adim">
+          <h2>Sonraki Adımınız Ne Olmalı?</h2>
+          <p>
+            Siber güvenlik uygulamaları geliştirmeye Python ile mi başlamak, yoksa sistem düzeyinde C dilinin temellerine mi inmek istersiniz?
+            Tercihinize uygun, daha detaylı Python veya C/C++ kurs önerileri hazırlamamı ister misiniz?
+          </p>
+
+          <div class="cta">
+            <a href="../../contact-me.html" class="btn"><i class="fas fa-arrow-right"></i> Bana tercihini söyle — sana özel kaynak listesi hazırlayayım</a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="copyright">&copy; 2025 Subutay Ülgen - Tüm Hakları Saklıdır</div>
+        <div class="social-links">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../../js/main.js"></script>
+</body>
+</html>
+
