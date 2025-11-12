@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🛡️ Siber Güvenlikte Hangi Programlama Dilleri Öğrenilmeli?</title>
+  <title>Siber Güvenlik Alanları</title>
   <link rel="stylesheet" href="../../../css/blogs.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -22,7 +22,7 @@
         </div>
         <nav>
           <ul>
-            <li><a href="index.html"><i class="fas fa-user"></i> Hakkımda</a></li>
+            <li><a href="../../../index.html"><i class="fas fa-user"></i> Hakkımda</a></li>
             <li><a href="../../references.html"><i class="fas fa-award"></i> Referanslar</a></li>
             <li><a href="../../projects.html"><i class="fas fa-code"></i> Projeler</a></li>
             <li><a href="../../services.html"><i class="fas fa-cogs"></i> Hizmetler</a></li>
@@ -37,312 +37,2229 @@
   <main>
     <div class="container">
       <article>
-        <h1 id="baslik">🛡️ Siber Güvenlik Alanında Hangi Programlama Dilleri Öğrenilmeli?</h1>
+        <h1 id="baslik">Siber Güvenliğin Alanları</h1>
 
         <p class="lead">
-          Siber güvenlik, sadece araç kullanmaktan ibaret değildir; bir sistemi gerçekten savunmak, saldırmak veya analiz etmek için,
-          o sistemin temelini oluşturan kodları anlamak gerekir. Bu rehber, kariyerine yeni başlayanlar veya uzmanlaşmak isteyenler için
-          hangi programlama dillerinin neden önemli olduğunu, hangi alanlarda kullanıldıklarını ve Türkçe kaynak önerilerini özetler.
+          Siber Güvenlik, oldukça genis ve farklı uzmanlıkları olan bi alandır. Bu yazımda Siber güvenliğin farklı disiplinlerinden
+          bu disiplinlerin farklarından, sektordeki maas karsılığından(2025 Kasım ayına göre) ve farklı detay konularından bahsediceğim.
         </p>
 
         <figure id="youtube">
           <h2>Konuyla ilgili Youtube videom</h2>
-          <a href="https://www.youtube.com/watch?v=ycE1ZaeLKU4" target="_blank" ><img src="Fotolar/yazilim-dilleri.png" alt="Siber güvenlik programlama dilleri" /> </a>
+          <a href="https://www.youtube.com/watch?v=ycE1ZaeLKU4" target="_blank" ><img src="Fotolar/siber_güvenlik_alanları.png" alt="Siber güvenliğin alanları" /> </a>
         </figure>
 
         <nav aria-labelledby="toc-heading">
           <h3 id="toc-heading">İçindekiler</h3>
           <ol class="toc">
-            <li><a href="#NasilCalisir">Nasıl Çalıştığını Bilmediğin Şeyi Koruyamazsın</a></li>
-            <li><a href="#nedir">Yazılım Dili Nedir</a></li>
-            <li><a href="#derinlik">Düşük Seviye ve Yüksek Seviye Yazılım</a></li>
-            <li><a href="#açıkkaynak">Açık Kaynak, Özgür Yazılım ve Özel Mülkiyet Yazılım</a></li>
-            <li><a href="#Alanlar">Siber Güvenlik Alanları</a></li>
-            <li><a href="#yazilim-dilleri-aciklamalari">Yazılım Dilleri Açıklamaları</a></li>
-            <li><a href="#python">Python</a></li>
-            <li><a href="#c">C</a></li>
-            <li><a href="#c-cpp">C++</a></li>
-            <li><a href="#java">Java</a></li>
-            <li><a href="#kotlin">Kotlin</a></li>
-            <li><a href="#javascript">JavaScript</a></li>
-            <li><a href="#go">Go (Golang)</a></li>
-            <li><a href="#assembly">Assembly</a></li>
-            <li><a href="#rust">Rust</a></li>
-            <li><a href="#sql">SQL</a></li>
-            <li><a href="#bash">Bash / Shell / PowerShell</a></li>
-            <li><a href="#swift">Swift</a></li>
-            <li><a href="#objective-c">Objective-C</a></li>
-            <li><a href="#terraform">Terraform / YAML</a></li>
+            <li><a href="#2015">2015 Yılında Değiliz</a></li>
+            <li><a href="#Birdenfazladisiplin">Birden Fazla Disiplinde Uzman Olmak</a></li>
+            <li><a href="#BakısAçısı">Şirketlerin Siber Güvenliğe Bakış Açısı</a></li>
+            <li><a href="#BlueTeamRedTeam">Blue Team ve Red team farkları</a></li>
           </ol>
         </nav>
 
-        <section id="NasilCalisir">
-          <h2 id="NasilCalisir">Nasıl Çalıştığını Bilmediğin Şeyi Koruyamazsın</h2>
+        <section id="2015s">
+          <h2 id="2015">2015 yılında değiliz.</h2>
           <p>
-          Bir şeyin nasıl çalıştığını bilmeden ondaki güvenlik açıklarını bulmak ve anlamak neredeyse imkânsızdır. Bu yüzden siber güvenlik alanında çalışmak istiyorsanız, güvenliğini sağlayacağınız teknoloji, ürün ya da neyse onun nasıl çalıştığını bilmeniz gerekir. Örneğin, henüz 16 yaşındayken yaşadığım şehir olan İzmir'in otobüs sistemlerinin RFID (Radio-Frequency Identification) ile çalışan ödeme sistemlerinde bir açık bulmuştum. Bu açığı bulurken önce ödemelerin nasıl yapıldığını gözlemledim, ardından eve gidip bu teknolojinin nasıl çalıştığına dair makaleler araştırdım. Sonrasında bu sistemde özel anahtarların kolayca kopyalanabileceğini öğrendim; kendi kartım üzerinde bunu denedim ve başarılı oldum (tabii ki ardından ilgili kurumlara bu bilgileri verdim). Hiçbir zaman buna yönelik hazır bir araç olmayacak, gerçekten bir siber güvenlik uzmanı olmak istiyorsanız sistemleri anlamalısınız; bunun için de o sistemlerin yazıldığı dilleri öğrenmelisiniz.
+            Bastan belirtmek isterim ki birçok film ve dizide olduğu gibi (en gerçekçi hacker dizisi olan mr robotta dahil) tek kisi birçok yeri hackleyip tek basına nasaya sızmak falan tarzı "havalı" yada "dahice" hack olayını yapamaz. Bunun en büyük nedeni ise artık siber güvenliğin ap ayrı bi disiplin haline gelmesi ve bunla birlikte saldırılara karsı farkllı önlemler alınması. Belgesellerini izlediğimiz adamların döneminde bunlar yoktu Kevin mitnick mesela evet dönemine göre çok iyidi ama o dönemde neredeyse hiç güvenlik önlemi yoktu ama artık var. Bütün bunlar tek bi kisinin devasa büyük hackler yapamamasının en büyük nedeni aslında hala bunlar imkansız değil ama eskisinden çok daha zor. Ama su unutulmamalı tek bi kisi Devasa bi hack yapmıs olsun bu onun siber güvneliğin bütün disiplinlerine ve alanlarına hakim olduğu için değil hedefine ulasacağı yoldaki teknik gereksinimlere sahip olduğu içindir e tabi sosyal muhendisliğide devreye sokunca her ne kadar eskisi kadar kolay olmasada tek bi kisi internetteki onlarsa sey sayesinde bu seviyedeki hackleri yapabiliyor.
           </p>
         </section>
 
-        <section id="nedir">
-          <h2 id="nedir">Yazılım Dili Nedir</h2>
+        <section id="Birdenfazladisiplins">
+          <h2 id="Birdenfazladisiplin">Birden Fazla Disiplinde Uzman Olmak</h2>
           <p>
-          Yazılım dediğimiz şey, önceden belirlenmiş sözdizimine (syntax, yazım kuralları) göre kurulmuş algoritmalardır. Bilgisayarlar en basit hâliyle toplama ve çıkarma işlemlerini yapabilen makinelerdir ve sadece 0 ile 1'i anlarlar. Biz bu şekilde de kod yazabiliriz, fakat insanların anlaması zordur; bu yüzden farklı amaçlar için farklı yazılım dilleri oluşturulmuştur.
+            Peki birden fazla disiplinde uzman olmak imkansız mı? Kesinlikle hayır hatta bu çok popüler bir sey örnekle size anlatayım, Benim sahsen tanıstığım bi Reverse eng uzmanı sektöre ilk girdiğinde soc çalısanı olarak baslamıs(bu terimler size yabancı geliyorsa telas etmeyin yazının devamında bundan bahsediyorum). soc lvl 1 iken "suan bi saldırı oluyo mu olmuyor mu?" yetisini kazanmıs. soc lvl 2 olduğunda ise "Bu saldırıya nasıl karsı koyabiliriz?" yetisini kazanmıs ardından ise kendisini yazılımda gelistrimis ve suan çalıstığı meslekte zararlı yazılımları inceliyor tabiki bu iki yeterlilikte suanki mesleğinde yardımcı oluyor. Baska bi örnekten bahsedeyim diyelimki bi Web uygulama güvenlikçisiniz, owasp top 10 zafiyetlerini ve web uygulaması gelistirmeyi biliyosunuz eğeer sistem güvenliğidede kendinizi gelistiriseniz uzman bi penetrasyon testeri olursunuz. Bunun nedeni sadece sızmıyor aynı zamanda da sızdıktan sonra kullanıcı yetkilerini artırıyosunuz. Bütün bunlar çok disiplinli olmanın avantajlarıdır. Bu arada ilk bahsettiğim kisi suanda kriptoloji alanında yüksek lisans yaptığından bahsetmisti amacı sadece ransomwarelerde uzman bi siber güvenlik uzmanı olup bu alanda akla gelen ilk isim olmak. <a class="links" href="https://www.youtube.com/watch?v=D0F7SKYlCIk" target="_blank"> Bu arada aiye bi ransomware toolu yazdırdığım bi videom var dikkatinizi çekebilir </a> 
           </p>
         </section>
-
-        <section id="derinlik">
-          <h2 id="derinlik">Düşük Seviye ve Yüksek Seviye Yazılım</h2>
-          <p>
-            Bilgisayarlar 0 ve 1’den anlar. Bunu doğrudan kullanmak yerine, düşük seviyeli ve yüksek seviyeli programlama dilleri geliştirilmiştir. Düşük seviyeli diller, işlemciye yakın çalışarak çok hızlı kod üretir; fakat yazımı ve yönetimi zordur. Yüksek seviyeli diller, insan diline daha yakın olup öğrenilmesi ve kullanımı kolaydır. Siber güvenlikte her iki tür dili bilmek, sistemleri derinlemesine anlamak için kritiktir.
-          </p>
-        </section>
-
-        <section id="açıkkaynak">
-          <h2 id="açıkkaynak">Açık Kaynak, Özgür Yazılım ve Özel Mülkiyet Yazılım</h2>
-          <p>
-            Bir yazılım geliştirdiğinizde, onu özel mülkiyetinize alıp satabilir veya açık kaynak yapabilirsiniz. Açık kaynak yazılımlar, kodu okuyabilmenize ve üzerinde değişiklik yapabilmenize imkân verir. Kapalı kaynak yazılımlar ise kodu gizli tutar. Siber güvenlikte açık kaynak araçlar öğrenme ve geliştirme açısından büyük avantaj sağlar.
-          </p>
-
-         <figure id="youtube">
-          <h2>Bu İkili Yazılım Dünyasını Değiştirdi</h2>
-          <a href="https://www.youtube.com/watch?v=QkHVRLVVorY" target="_blank" ><img src="Fotolar/Screenshot 2025-11-11 at 13-05-45 bu ikili yazılım dünyasını değiştirdi - YouTube.png"  /> </a>
-         </figure>
-
-         <p>
-           Eğer bir dil açık kaynaklıysa kodunu okuyabilirsiniz, kapalı kaynaksa bunu yapamazsınız.
-         </p>
-
-         <br>
-         
-         <h2>Tool Meselesi</h2>
-         <p>
-           Github üzerinden eğitim amaçlı araçları indirip kullanmak yaygındır. Kendi araçlarınızı geliştirip portfolyo oluşturmak için GitHub’a yüklemek önerilir.
-         </p>
-        </section>
-
-        <section id="Alanlar">
-          <h2 id="Alanlar">Kısaca Siber Güvenlik Alanları</h2>
-          <p>Siber güvenlik için öğreneceğiniz dili seçmeden önce hangi alanda çalışacağınızı seçmelisiniz.</p>
-    
-          <br>
-         
-            <h3>Web Application Security</h3>   
-            <p>Web uygulama güvenliği, web uygulamalarındaki güvenlik açıklarını keşfetip sömürmeye yönelik bir alandır.</p>
-            
-            <br>
-            
-            <ul><h4>Hangi Diller Öğrenilmeli</h4>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer"><li>HTML</li></a>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer"><li>CSS</li></a>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer"><li>JavaScript</li></a>
-              <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer"><li>NodeJS</li></a>
-              <a href="https://www.w3schools.com/sql/" target="_blank" rel="noopener noreferrer"><li>SQL</li></a>
-              <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer"><li>Python</li></a>
-              <a href="https://golang.org/" target="_blank" rel="noopener noreferrer"><li>Go</li></a>
-              <a href="https://www.php.net/" target="_blank" rel="noopener noreferrer"><li>PHP</li></a>
-            </ul>
-
-          <br><br>
-          
-            <h3>System Security</h3>   
-            <p>Yazılım/işletim sistemi hatalarını, bellek yönetimi hatalarını ve protokol eksiklerini araştırır. Genellikle PoC (proof-of-concept) bulur, ancak exploit yazarken dikkatli davranır.</p>
-            
-            <br>
-            
-            <ul><h4>Hangi Diller Öğrenilmeli</h4>
-              <a href="https://devdocs.io/c/" target="_blank" rel="noopener noreferrer"><li>C</li></a>
-              <a href="https://devdocs.io/cpp/" target="_blank" rel="noopener noreferrer"><li>C++</li></a>
-              <a href="https://www.cs.virginia.edu/~evans/cs216/guides/x86.html" target="_blank" rel="noopener noreferrer"><li>Assembly</li></a>
-              <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer"><li>Python</li></a>
-              <a href="https://www.rust-lang.org/" target="_blank" rel="noopener noreferrer"><li>Rust</li></a>
-              <a href="https://www.ruby-lang.org/en/" target="_blank" rel="noopener noreferrer"><li>Ruby</li></a>
-              <a href="https://golang.org/" target="_blank" rel="noopener noreferrer"><li>Go</li></a>
-              <a href="https://www.w3schools.com/sql/" target="_blank" rel="noopener noreferrer"><li>SQL</li></a>
-              <a href="https://tldp.org/LDP/Bash-Beginners-Guide/html/" target="_blank" rel="noopener noreferrer"><li>Bash / PowerShell</li></a>
-            </ul>
-
-          <br><br>
+ <br>
         
-            <h3>Network Security</h3>   
-            <p>Ağ altyapılarını, iletişim protokollerini ve ağdaki cihazları korumaya yönelik uygulamalar bütünü. Amaç; yetkisiz erişimi, veri sızıntılarını, DoS ve ağ tabanlı saldırıları önlemek, tespit etmek ve müdahale etmektir.</p>
+        <section id="BakısAçısıs">
+          <h2 id="BakısAçısı">Şirketlerin Siber Güvenliğe Bakış Açısı</h2>
+          <p>
+            Bu sorunun cevabı Türkiye AB ve Amerika olmak üzere üçe ayrılıyor<br><br>
+          </p>
+          
+          <h4>Türkiye</h4>
+          <p>
+            Türkiye de siber güvenlik konusu genelde daha az önemseniyor<br>
+            Gösterilen önem çoğunlukla regülasyondan kaynaklı ve büyük hacklenmelerde dahi ceza ödenmiyor<br><br>
             
-            <br>
+            Türkiye de siber güvenlik sektörünün potansiyeli baya yüksek<br>
+            Ülkede genç ve teknolojiyi seven bir iş gücü var<br>
+            Üniversitelerde bilgisayar mühendisliği siber güvenlik ve bilgi teknolojileri alanlarında lisans ve yüksek lisans programları giderek artıyor<br>
+            Bu da gelecekte nitelikli siber güvenlik uzmanı yetiştirmek için iyi bir kaynak sağlıyor ama halen uzman açığı çok<br>
+            Türkiye de çalışan başına düşen iş yükü AB ve Amerika ya göre baya fazla<br><br>
             
-            <ul><h4>Hangi Diller Öğrenilmeli</h4>
-              <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer"><li>Python</li></a>
-              <a href="https://tldp.org/LDP/Bash-Beginners-Guide/html/" target="_blank" rel="noopener noreferrer"><li>Bash / Shell scripting</li></a>
-              <a href="https://devdocs.io/c/" target="_blank" rel="noopener noreferrer"><li>C</li></a>
-              <a href="https://golang.org/" target="_blank" rel="noopener noreferrer"><li>Go</li></a>
-              <a href="https://devdocs.io/cpp/" target="_blank" rel="noopener noreferrer"><li>C++</li></a>
-              <a href="https://www.rust-lang.org/" target="_blank" rel="noopener noreferrer"><li>Rust</li></a>
-              <a href="https://www.w3schools.com/sql/" target="_blank" rel="noopener noreferrer"><li>SQL</li></a>
-            </ul>
+            Çalışan profili olarak Türkiye de siber güvenlik uzmanları genellikle 25-35 yaş arası ve teknik olarak iyi kişiler<br>
+            Büyük şirketler kendi siber güvenlik birimlerini kuruyor ama KOBİ ler çoğunlukla dışarıdan destek alıyor<br>
+            Maaşlar deneyime ve şirkete göre değişiyor<br>
+            Ortalama bir uzman aylık 30000 50000 TL arasında<br>
+            Kıdemli veya yönetici olanlar 70000 TL ve üstü alabiliyor<br>
+            Bu maaşlar genç yetenekleri çekmek için yeterli ama ABD ve AB ye göre hala düşük<br><br>
+            
+            Türkiye de siber güvenlik ekosistemi hızlı büyüyor<br>
+            Yerli yazılım ve güvenlik firmaları devlet ve özel sektöre hizmet veriyor<br>
+            Bankacılık e-ticaret ve telekom gibi alanlarda güvenlik çözümleri artıyor<br>
+            Devlet de kritik altyapılar için milli siber güvenlik stratejilerini güçlendirmeye çalışıyor<br>
+            Ama saldırı tespit sistemleri SOC altyapıları ve tehdit istihbaratı konusunda hala dışa bağımlılık var<br><br>
+            
+            Türkiye nin coğrafi konumu ve genç nüfusu siber güvenlikte büyük potansiyel yaratıyor<br>
+            Nitelikli çalışanların yetişmesi start up ekosisteminin gelişmesi ve devlet teşvikleri artarsa Türkiye hem yerel hem uluslararası alanda önemli bir oyuncu olabilir<br>
+            Ama bunun için mevzuatın uygulanması şirketlerin siber güvenlik kültürünü benimsemesi ve bilinçlendirme çalışmalarının artması gerekiyor<br>
+          </p>
+          
+          <br>
+          
+          <h4>Amerika</h4>
+          <p>
+            Amerika siber güvenliğe gerçekten çok önem veriyor<br>
+            Hacklenmemek için aktif çalışan bir sektör var<br>
+            Bu yüzden çok fazla siber güvenlik şirketi var<br>
+            Büyük şirketler kendi içlerinde ciddi şekilde siber güvenlik birimleri kurmuş durumda<br>
+            ABD de siber güvenlik hem ulusal güvenlik hem de ekonomik çıkar açısından stratejik bir alan olarak görülüyor<br><br>
+            
+            Amerika da siber güvenlik alanında çalışanların profili genellikle deneyimli ve eğitimli kişilerden oluşuyor<br>
+            Üniversitelerde ve özel eğitim programlarında siber güvenlik uzmanları yetişiyor<br>
+            Maaşlar Türkiye ye göre çok yüksek<br>
+            Ortalama bir uzman yıllık 80000 120000 dolar arasında kazanıyor<br>
+            Kıdemli uzmanlar ve yöneticiler 200000 doları bulabiliyor<br>
+            Bu maaşlar yetenekleri çekmek için yeterli ama rekabet de çok yoğun<br><br>
+            
+            ABD de şirketler genellikle kendi SOC merkezlerini kuruyorlar<br>
+            Tehdit istihbaratı saldırı tespit ve önleme sistemleri çok gelişmiş<br>
+            Kamu ve özel sektör birlikte çalışıyor<br>
+            Siber güvenlik start up lar ve büyük teknoloji şirketleri piyasayı domine ediyor<br>
+            Ayrıca devlet siber güvenlik alanında düzenlemeler ve yaptırımlar ile baskı yapıyor<br>
+            Ama şirketler çoğu zaman kendi stratejilerini bağımsız belirleyebiliyorlar<br><br>
+            
+            Amerika da sektör büyüklüğü çok büyük ve sürekli büyüyor<br>
+            İş ilanları çok fazla ve yeni teknolojilere yatırım yapılıyor<br>
+            Yapay zeka ve makine öğrenimi siber güvenlikte aktif olarak kullanılıyor<br>
+            Bu yüzden ABD global siber güvenlik trendlerini belirleyen bir ülke konumunda<br>
+            Türkiye gibi ülkeler için hem ilham hem de rekabet unsuru oluyor<br>
+          </p>
+          
+          <br>
+          
+          <h4>Avrupa Birliği</h4>
+          <p>
+            AB de siber güvenlik daha çok regülasyon ve hukuki uyum odaklı<br>
+            Ticari ve veri güvenliği standartları zorunlu ve uyum sağlamayan ülkelere yaptırım uygulanabiliyor<br>
+            Şirketler siber güvenliği öncelikle regülasyonlara uyum için yönetiyor<br><br>
+            
+            Avrupa da çalışan profili teknik olarak iyi eğitim almış kişilerden oluşuyor<br>
+            Üniversitelerde siber güvenlik programları yaygın ve Avrupa çapında sertifika programları var<br>
+            Maaşlar Türkiye ye göre yüksek ama ABD kadar değil<br>
+            Ortalama bir uzman yıllık 60000 90000 euro civarında kazanıyor<br>
+            Kıdemli kişiler 120000 euro ya kadar çıkabiliyor<br><br>
+            
+            AB de şirketler çoğunlukla regülasyon uyumunu öncelikli görüyor<br>
+            SOC merkezleri ve tehdit izleme sistemleri yaygın ama daha çok uyum odaklı<br>
+            Devlet düzenlemeleri ve regülasyon baskısı oldukça güçlü<br>
+            Özellikle GDPR gibi veri koruma yasaları şirketleri sürekli denetliyor ve cezai yaptırımlar uygulanıyor<br><br>
+            
+            Avrupa da siber güvenlik ekosistemi oldukça gelişmiş<br>
+            Yerli firmalar var ama ABD gibi inovasyon ve start up lar daha sınırlı<br>
+            Regülasyon baskısı inovasyonu sınırlıyor ama uyum kültürü güçlü<br>
+            Türkiye gibi ülkeler için AB bir örnek ve baskı kaynağı oluyor<br>
+          </p>
+        </section>
 
-          <br><br>
 
+        <section id="BlueTeamRedTeams">
+          <h2 id="BlueTeamRedTeam">Blue Team Ve Red Team Nedir?</h2>
+          <p>
+            Güvenlik anlayısı 2 ye ayrılır bunların karısımı ile olabilecek en güvenli sistemleri üretmeye çalısırız. Ofansif ve Defansif güvenlik medya ve popüler kültürde en çok bilinen olan ofansif güvenlikten bahsedelim. Gelistiriciler sistemlerinizde bi hata bıraktı ve bu hata sonucu hackerler sisteminize girebiliyor. Bunu ancak bi saldırgan gibi bakarak görebilirsiniz, bu bakıs açısı ve mentalite siber güvenliğin red teami olarak bilinir. Hani derler ya bilmemne sirketinde bi açık buldu ve su kadar para kazandı diye bunlar en üst düzey açıklar için kimse bi sitedeki idoru bulduğunuz için size milyonlar vermez. Gelelim ofansif güvenlik kısmına, sektörün asıl büyük alanı budur pek fazla gözükmez ama hem maaslar açısından hemde is imkanları açısından red teama göre çok daha fazla avantajlıdır. Bu kisiler sistem hacklendikten sonra yada olay esnasında olaya mudahale ederler. Blue teame en güzel örnek security operation center analistleridir (soc). Bu kisiler güvenlik operasyonları merkezinda oturur ve iç ağda olan olayları inceler "su olursa hacklenebiliriz" diyerek kurallar yazarlar. Örneğin BTK süpeli domainleri yayınlar bu domainlerden birinin ip adresine giden bi paket olursa alermler çalar ve olabilecek saldırıları engellemeye çalısırlar.    
+          </p>
         </section>
 
         <section id="yazilim-dilleri-aciklamalari">
     <h2 id="yazilim-dilleri-aciklamalari">Yazılım Dilleri Açıklamaları</h2>
 
-    <h3 id="python">Python</h3>
-    <p>
-        Python, yüksek seviyeli, yorumlanan ve okunabilirliği ön planda tutan bir programlama dilidir. Basit sözdizimi ve güçlü standart kütüphanesi sayesinde hızlı prototipleme ve script geliştirme olanağı sunar. Siber güvenlikte Python, hem offensive hem de defensive alanlarda yoğun olarak kullanılır. Örneğin, ağ trafiği analizleri, port taramaları, web scraping, API etkileşimleri ve otomasyon scriptleri için idealdir.
-    </p>
-    <p>
-        Python’un avantajlarından biri, büyük ve aktif bir topluluk tarafından sürekli desteklenen binlerce kütüphane ve framework’e sahip olmasıdır. <a href="https://pypi.org/project/scapy/" target="_blank" rel="noopener noreferrer">Scapy</a> ile ağ paketlerini analiz edebilir, <a href="https://requests.readthedocs.io/en/master/" target="_blank" rel="noopener noreferrer">Requests</a> ile HTTP isteklerini yönetebilir, <a href="https://pycryptodome.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">PyCryptodome</a> ile şifreleme işlemleri gerçekleştirebilirsiniz. Malware analizi ve IoC (Indicator of Compromise) çıkarma işlemleri için Python scriptleri yaygın olarak kullanılır. <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">Python.org</a> üzerinden dilin resmi belgelerine erişebilirsiniz. Ayrıca, CTF (Capture the Flag) etkinliklerinde ve pentest laboratuvarlarında hızlı test ve denemeler yapmak için mükemmel bir dildir.
-    </p>
-    <p>
-        Python’un dezavantajı, yorumlanan bir dil olması nedeniyle C veya C++ gibi düşük seviyeli dillere göre performansının düşük olmasıdır. Ancak siber güvenlikte kritik performans gereken kodlar genellikle C veya Assembly ile yazıldığından, Python çoğunlukla araç geliştirme, otomasyon ve analiz için kullanılır. Yeni başlayanlar için öğrenmesi kolaydır, bu nedenle siber güvenlik kariyerine başlamak isteyenler için ideal bir ilk dil olarak öne çıkar.
-    </p>
+<section id="yazilim-dilleri-aciklamalari">
+  <h2 id="yazilim-dilleri-aciklamalari">Yazılım Dilleri Açıklamaları</h2>
 
-    <h3 id="c">C</h3>
-    <p>
-        C, düşük seviyeli, sistem programlama odaklı bir dildir. İşletim sistemi, driver ve performans kritik uygulamalar için kullanılır. Bellek yönetimi manuel olduğu için buffer overflow, heap/stack manipülasyonu gibi güvenlik kavramlarını anlamak isteyenler için idealdir. Exploit geliştirme, reverse engineering ve firmware analizi gibi alanlarda kritik öneme sahiptir.
-    </p>
-    <p>
-        C, donanım seviyesine yakın çalışması sayesinde siber güvenlik araştırmalarında hataları ve zafiyetleri bulmak için yaygın şekilde kullanılır. Örneğin, kernel exploitleri, işletim sistemi güvenlik açıklarının test edilmesi ve düşük seviyeli ağ protokollerinin analizi gibi görevler C ile gerçekleştirilir. Hafıza yönetimini ve pointer kullanımını öğrenmek, güvenlik araştırmacısının yeteneklerini ciddi şekilde geliştirir.
-    </p>
-    <p>
-        Dezavantajı, diğer modern diller kadar yüksek seviyeli abstractions sunmamasıdır. Hatalı bellek yönetimi ciddi güvenlik açıklarına yol açabilir. Ancak doğru öğrenildiğinde C, siber güvenlikte temel yapı taşlarından biridir ve sistemlerin derinlemesine anlaşılmasını sağlar.
-    </p>
+<section id="1-network-security">
+  <h2>1. Ağ Güvenliği (Network Security)</h2>
 
-    <h3 id="c-cpp">C++</h3>
-    <p>
-        C++, C dilinin üzerine nesne yönelimli özellikler ekleyen bir sistem programlama dilidir. Hem performans hem de modern programlama paradigmasını bir araya getirir. Ağ uygulamaları, oyun güvenliği, exploit geliştirme ve reverse engineering projelerinde sıkça tercih edilir.
-    </p>
-    <p>
-        STL ve modern C++ özellikleri sayesinde karmaşık veri yapıları ve algoritmalar geliştirmek mümkündür. Malware geliştirme veya analiz araçları yazarken yüksek performanslı ve güvenli kod üretmek için idealdir. C++ ayrıca modern işletim sistemi araçları ve güvenlik kütüphaneleri geliştirmek için kullanılır.
-    </p>
-    <p>
-        Dezavantajı, C’ye göre daha karmaşık bir sözdizimine sahip olması ve yanlış bellek yönetimi riskinin halen bulunmasıdır. Ancak öğrenildiğinde, hem sistem hem de uygulama seviyesinde esnek bir programlama ortamı sunar.
-    </p>
+  <p>
+    <strong>Ağ güvenliği</strong>, siber güvenliğin en köklü ve en temel dallarından biridir. 
+    Bir kuruluşun, kurumun ya da devletin dijital altyapısının dış dünyaya açılan kapılarını korumayı hedefler. 
+    En basit ifadeyle, ağ güvenliği “verilerin bir noktadan diğerine güvenli biçimde taşınmasını sağlama” işidir. 
+    Ancak 2025 itibarıyla Türkiye’deki BT altyapılarının çoğu bulutla entegre olduğu için, klasik yerel ağ güvenliği artık
+    <em>bulut + hibrit sistemlerin</em> korunması anlamına da gelmektedir.
+  </p>
 
-    <h3 id="java">Java</h3>
-    <p>
-        Java, platform bağımsız, nesne yönelimli bir programlama dilidir. JVM üzerinde çalıştığı için farklı işletim sistemlerinde aynı kodu çalıştırmak mümkündür. Kurumsal uygulamalar, web servisleri ve Android uygulamaları geliştirmek için yaygın şekilde kullanılır.
-    </p>
-    <p>
-        Siber güvenlikte Java, özellikle Android uygulama güvenliği, pentest araçları ve kurumsal servislerin test edilmesinde önemlidir. <a href="https://owasp.org/www-project-mobile-top-10/" target="_blank" rel="noopener noreferrer">OWASP Mobile Top 10</a> gibi kaynaklar Java tabanlı uygulamalarda zafiyetleri analiz etmek için referans alınabilir. Java ile yazılmış uygulamalarda zafiyetleri analiz etmek ve exploit geliştirmek için araçlar geliştirmek mümkündür.
-    </p>
-    <p>
-        Java'nın avantajları arasında geniş topluluk, güçlü IDE desteği ve JVM'in sağladığı güvenlik mekanizmaları vardır. Dezavantajı ise C veya Go gibi düşük seviyeli sistem kontrollerine doğrudan erişimin sınırlı olmasıdır.
-    </p>
+  <h3>Gereken Teknik Beceriler</h3>
+  <ul>
+    <li>TCP/IP, DNS, DHCP, VLAN, VPN, Proxy gibi ağ protokollerine hâkimiyet</li>
+    <li>Firewall yapılandırmaları (Fortinet, Palo Alto, Cisco ASA, pfSense vb.)</li>
+    <li>IDS/IPS sistemleri (Snort, Suricata, Zeek)</li>
+    <li>Wireshark, Nmap, Burp Suite gibi analiz araçlarını etkin kullanabilme</li>
+    <li>Linux/Windows Server yönetimi ve log inceleme becerileri</li>
+  </ul>
 
-    <h3 id="kotlin">Kotlin</h3>
-    <p>
-        Kotlin, modern bir JVM dili olup özellikle Android uygulama geliştirme için tasarlanmıştır. Java ile tam uyumludur ve daha kısa, güvenli ve okunabilir kod yazmayı sağlar.
-    </p>
-    <p>
-        Android güvenlik araştırmaları ve uygulama güvenliği testlerinde Kotlin, uygulama mantığını hızlı anlamak, zafiyetleri analiz etmek ve test scriptleri geliştirmek için kullanılır. Kotlin’in modern syntax’ı hata yapmayı zorlaştırır ve güvenli kod yazmayı destekler.
-    </p>
-    <p>
-        Avantajları, Java’ya kıyasla daha kısa kod yazma imkânı, null safety mekanizması ve Android ekosistemine tam uyumluluğudur. Dezavantajı ise bazı eski araç ve kütüphanelerle uyumsuz olabilmesidir.
-    </p>
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    2025 yılında Türkiye’de ağ güvenliği uzmanlarına olan ihtiyaç, özellikle enerji, bankacılık, savunma ve e-ticaret sektörlerinde
+    ciddi oranda artmıştır. Büyük şehirlerde (İstanbul, Ankara, Kocaeli, İzmir) SOC merkezleri (Security Operation Center) açan şirketlerin sayısı
+    2023’e göre %40 artmıştır. 
+  </p>
+  <p>
+    Ancak işverenlerin talepleri de yükselmiştir: artık yalnızca sertifika değil, pratik beceri de aranmaktadır.
+    Örneğin sadece “CompTIA Network+” belgesi olan biri yerine, “Fortinet NSE4 + gerçek vaka çözüm deneyimi” olan adaylar önceliklidir.
+    İş ilanlarında genellikle SOC Analyst, Network Security Engineer veya Firewall Specialist unvanları görülür.
+  </p>
 
-    <h3 id="javascript">JavaScript</h3>
-    <p>
-        JavaScript, web tabanlı uygulamalar için kullanılan yüksek seviyeli bir dildir. Hem frontend hem de backend (Node.js) uygulamalarında kullanılır. Web güvenliği, XSS, CSRF, web uygulama analizleri ve pentest çalışmalarında yoğun şekilde kullanılır.
-    </p>
-    <p>
-        Web uygulamalarını analiz etmek, web tabanlı güvenlik açıklarını test etmek ve otomasyon scriptleri yazmak için JavaScript vazgeçilmezdir. <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">Node.js</a> ile backend araçları ve servisler geliştirmek mümkündür. Web güvenliği araştırmaları sırasında <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">MDN JavaScript documentation</a> kaynaklarından faydalanabilirsiniz.
-    </p>
-    <p>
-        Avantajları arasında hızlı geliştirme, geniş topluluk ve güçlü paket yöneticisi (npm) bulunur. Dezavantajı ise dinamik tip sisteminin bazı hatalara yol açabilmesidir.
-    </p>
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior Ağ Güvenliği Uzmanı</td>
+        <td>0–2 yıl</td>
+        <td>35.000 – 55.000 TL</td>
+      </tr>
+      <tr>
+        <td>Mid-Level Network Security Engineer</td>
+        <td>2–5 yıl</td>
+        <td>60.000 – 90.000 TL</td>
+      </tr>
+      <tr>
+        <td>Senior / SOC Team Lead</td>
+        <td>5+ yıl</td>
+        <td>100.000 – 150.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    Dövizle çalışan veya global uzaktan pozisyonlarda bu rakamlar 2–3 katına çıkabilir.
+    Ancak Türkiye iç pazarında maaş artışı genellikle büyük kurumsal firmalarda görülür.
+  </p>
 
-    <h3 id="go">Go (Golang)</h3>
-    <p>
-        Go, Google tarafından geliştirilmiş, yüksek performanslı ve concurrency destekli bir programlama dilidir. Ağ araçları, pentest frameworkleri ve cloud uygulamaları geliştirmek için kullanılır.
-    </p>
-    <p>
-        Siber güvenlikte Go, hızlı ve hafif servisler, otomasyon araçları ve ağ analiz araçları geliştirmek için idealdir. Hafif concurrency modeli ile çok sayıda eşzamanlı görev yönetilebilir. Go ile yazılmış güvenlik araçları hakkında daha fazlası için <a href="https://github.com/topics/golang?l=golang&q=security" target="_blank" rel="noopener noreferrer">GitHub'da Go güvenlik projelerine</a> bakabilirsiniz. Ayrıca <a href="https://golang.org/" target="_blank" rel="noopener noreferrer">resmi Go belgeleri</a> ile dili daha iyi öğrenebilirsiniz.
-    </p>
-    <p>
-        Avantajları hızlı derleme, güçlü concurrency desteği ve düşük bellek kullanımıdır. Dezavantajı ise bazı modern dil özelliklerinin eksik olmasıdır.
-    </p>
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    2025 itibarıyla ağ güvenliği alanında orta seviye pozisyonlar için rekabet oldukça fazladır.
+    Bunun nedeni, sektöre girişin “nispeten kolay” olmasıdır; birçok kişi bu alandan başlar.
+    Ancak ileri seviye uzmanlık (örneğin SOC yönetimi veya güvenlik mimarisi) hâlâ az kişide vardır.
+  </p>
+  <p>
+    Yeni mezunlar için SOC Analyst olarak başlamak en yaygın yoldur.
+    Ancak burada vardiyalı çalışma, gece nöbetleri ve stresli ortam gibi zorluklar vardır.
+  </p>
 
-    <h3 id="assembly">Assembly</h3>
-    <p>
-        Assembly, makine diline çok yakın düşük seviyeli bir dildir. CPU komutlarını doğrudan kullanarak işlem yapar. Exploit geliştirme, reverse engineering ve firmware analizlerinde kritik öneme sahiptir.
-    </p>
-    <p>
-        Buffer overflow, shellcode yazımı ve sistem çağrılarının analizi gibi güvenlik konularında Assembly bilgisi zorunludur. <a href="https://www.cs.virginia.edu/~evans/cs216/guides/x86.html" target="_blank" rel="noopener noreferrer">x86 Assembly Guides</a> gibi kaynaklara bakarak Assembly öğrenmeye başlayabilirsiniz. İşlemci mimarilerini anlamak ve düşük seviyeli hataları tespit etmek için kullanılır.
-    </p>
-    <p>
-        Dezavantajı öğrenmesinin zor ve hata yapma riskinin yüksek olmasıdır. Ancak siber güvenlik uzmanları için sistemlerin en derin seviyesinde kontrol sağlar.
-    </p>
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Her sektörün ihtiyaç duyduğu bir uzmanlık (bankacılık, sağlık, enerji, kamu vb.)</li>
+    <li>Uzaktan çalışma imkânı yüksektir</li>
+    <li>Yurt dışı iş fırsatları güçlüdür</li>
+    <li>Temel siber güvenlik bilgisini kazandırır; diğer alanlara geçiş kolaydır</li>
+  </ul>
 
-    <h3 id="rust">Rust</h3>
-    <p>
-        Rust, modern bir sistem programlama dilidir. Bellek güvenliği, concurrency ve performansı ön planda tutar. Buffer overflow ve memory leak gibi sorunları engeller.
-    </p>
-    <p>
-        Siber güvenlikte Rust, güvenli araçlar, exploit test frameworkleri ve sistem yazılımları geliştirmek için tercih edilir. <a href="https://www.rust-lang.org/learn" target="_blank" rel="noopener noreferrer">Rust documentation</a>'ı incelerseniz dilin bellek güvenliği açısından neden bu kadar güçlü olduğunu görebilirsiniz. Bellek güvenliği ve performans gerektiren görevlerde C/C++ alternatifi olarak kullanılır.
-    </p>
-    <p>
-        Avantajları memory-safe olması ve modern syntax'ıdır. Dezavantajı, yeni başlayanlar için öğrenme eğrisinin dik olmasıdır.
-    </p>
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>Vardiyalı çalışma ve anlık kriz yönetimi baskısı</li>
+    <li>Sürekli güncellenen teknolojilere ayak uydurma zorunluluğu</li>
+    <li>Yanlış yapılandırmaların büyük zararlara yol açma riski</li>
+    <li>Yüksek stres düzeyi (özellikle SOC ortamlarında)</li>
+  </ul>
 
-    <h3 id="sql">SQL</h3>
-    <p>
-        SQL, veri tabanlarını yönetmek ve sorgulamak için kullanılan bir dildir. Siber güvenlikte SQL injection testleri, veri tabanı güvenliği ve log analizlerinde kullanılır.
-    </p>
-    <p>
-        SQL bilgisi, pentest ve incident response süreçlerinde veri tabanı yapılarını anlamak için kritiktir. <a href="https://portswigger.net/web-security/sql-injection" target="_blank" rel="noopener noreferrer">PortSwigger Web Security Academy</a> üzerinden SQL injection saldırıları hakkında detaylı bilgi edinebilirsiniz. Veri sızıntısı, yetkisiz erişim veya kötü amaçlı sorguları tespit etmek için kullanılır.
-    </p>
-    <p>
-        Dezavantajı sadece veri tabanı seviyesinde çalışmasıdır, ancak diğer dillerle kombine edildiğinde güçlü bir araç seti sunar.
-    </p>
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    Bu alan <strong>detaycı, sabırlı ve analitik düşünebilen</strong> kişiler için idealdir.
+    Ağ topolojilerini anlamaktan zevk alıyorsan, sistematik düşünüyorsan ve
+    “her paketin neden oradan geçtiğini” merak ediyorsan tam sana göre olabilir.
+  </p>
+  <p>
+    Eğer daha yaratıcı, test odaklı veya kod yazmayı seven biriysen; 
+    bir süre sonra Uygulama Güvenliği (AppSec) veya Penetrasyon Testi alanlarına geçmeyi düşünebilirsin.
+  </p>
 
-    <h3 id="bash">Bash / Shell / PowerShell</h3>
-    <p>
-        Bash, Shell ve PowerShell, sistem yönetimi, otomasyon ve güvenlik scriptleri için kullanılır. Linux ve Windows ortamlarında log analizi, ağ taraması ve script tabanlı otomasyon için idealdir.
-    </p>
-    <p>
-        Siber güvenlikte incident response, malware analiz otomasyonu ve pentest araçlarının çalıştırılması için vazgeçilmezdir. Hedef sistem üzerinde hızlı ve etkili kontroller yapılmasını sağlar. <a href="https://ss64.com/bash/" target="_blank" rel="noopener noreferrer">Bash command reference</a> gibi kaynaklar Bash komutlarını öğrenmek için yararlı olabilir.
-    </p>
-    <p>
-        Dezavantajları platforma bağlılık ve syntax farklılıklarıdır. Ancak öğrenildiğinde güvenlik uzmanının en temel araçları arasında yer alır.
-    </p>
+  <blockquote>
+    <p><em>“Ağ güvenliği, siber güvenliğin kemik yapısı gibidir. 
+    Sağlam bir altyapı olmadan hiçbir sistem güvenli olamaz.”</em></p>
+  </blockquote>
+</section>
 
-    <h3 id="swift">Swift</h3>
-    <p>
-        Swift, Apple ekosistemi için geliştirilmiş modern bir programlama dilidir. iOS ve macOS uygulama güvenliği çalışmalarında kullanılır. Objective-C ile tam uyumludur.
-    </p>
-    <p>
-        Mobil uygulamaları analiz etmek, güvenlik açıklarını test etmek ve exploit geliştirmek için kullanılır. <a href="https://developer.apple.com/swift/" target="_blank" rel="noopener noreferrer">Apple Swift documentation</a> ile Swift dilini daha derinlemesine öğrenebilirsiniz. Kod okunabilirliği ve güvenliği ön planda tutar.
-    </p>
-    <p>
-        Avantajları modern syntax ve null safety özellikleridir. Dezavantajı ise sadece Apple ekosistemiyle sınırlı olmasıdır.
-    </p>
+<section id="2-application-security">
+  <h2>2. Uygulama Güvenliği (Application Security – AppSec)</h2>
 
-    <h3 id="objective-c">Objective-C</h3>
-    <p>
-        Objective-C, Apple platformları için kullanılan nesne yönelimli bir dildir. Legacy iOS uygulamaları ve sistem analizleri için önemlidir.
-    </p>
-    <p>
-        Mevcut uygulamaları analiz etmek, eski exploitleri anlamak ve güvenlik testleri yapmak için kullanılır. Swift ile birlikte kullanılabilir. Objective-C hakkında daha fazla bilgi için <a href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html" target="_blank" rel="noopener noreferrer">Apple Documentation</a> sayfalarını ziyaret edebilirsiniz.
-    </p>
-    <p>
-        Dezavantajı daha eski ve karmaşık syntax'a sahip olmasıdır, ancak Apple platformunda güvenlik araştırmaları için kritik bir dildir.
-    </p>
+  <p>
+    <strong>Uygulama Güvenliği (AppSec)</strong>, siber güvenliğin yazılım geliştirme ile doğrudan kesiştiği alandır.  
+    Amacı, bir uygulamanın tasarımından yayına kadar tüm yaşam döngüsünde güvenli olmasını sağlamaktır.  
+    Artık yalnızca ağları değil, yazılımın <em>kendisi</em> de korunmalıdır — çünkü saldırıların büyük kısmı doğrudan uygulamalara yöneliktir.
+  </p>
 
-    <h3 id="terraform">Terraform / YAML</h3>
-    <p>
-        Terraform (HCL) ve YAML, bulut altyapısı ve DevOps konfigürasyonlarını yönetmek için kullanılır. Siber güvenlikte cloud security uzmanları tarafından konfigürasyon hatalarını tespit etmek ve güvenli dağıtım yapmak için kullanılır.
-    </p>
-    <p>
-        DevSecOps süreçlerinde otomasyon, altyapı yönetimi ve güvenlik politikalarını uygulamak için vazgeçilmezdir. YAML, Kubernetes ve CI/CD konfigürasyonları için standarttır. <a href="https://www.terraform.io/docs" target="_blank" rel="noopener noreferrer">Terraform documentation</a> ile bulut altyapılarını güvenli olarak yönetmeyi öğrenebilirsiniz.
-    </p>
-    <p>
-        Dezavantajı, programlama dili olmaktan ziyade konfigürasyon dili olmalarıdır, ancak cloud güvenliği için kritik yetenekler sağlar.
-    </p>
+  <p>
+    2025 yılında Türkiye’de her sektörde (özellikle finans, e-ticaret ve kamu) binlerce web, mobil ve API tabanlı uygulama kullanılmaktadır.  
+    Bu da AppSec uzmanlarına olan talebi hızla artırmıştır.  
+    Ancak Türkiye’de bu alanda yetkin uzman sayısı hâlâ azdır; çoğu yazılımcı güvenlik bilincine sahip değildir.  
+    Bu durum, AppSec’i hem yüksek potansiyele sahip hem de nispeten az rekabetli bir alan haline getirmektedir.
+  </p>
+
+  <h3>Gereken Teknik Beceriler</h3>
+  <ul>
+    <li>OWASP Top 10 güvenlik açıklarını derinlemesine bilmek</li>
+    <li>Web teknolojileri (HTML, CSS, JS, REST API, JSON, GraphQL) konusunda bilgi</li>
+    <li>Backend dillerinden en az biri: Python, Java, .NET, Node.js, Go</li>
+    <li>Uygulama test araçları: Burp Suite, OWASP ZAP, Postman, Nessus, Acunetix</li>
+    <li>Statik ve dinamik analiz (SAST/DAST) araçları: SonarQube, Veracode, Checkmarx</li>
+    <li>Güvenli kodlama prensipleri (input validation, encryption, session management)</li>
+  </ul>
+
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    Türkiye’de 2025 itibarıyla AppSec pozisyonları genellikle orta ve büyük ölçekli teknoloji şirketlerinde bulunmaktadır.  
+    Özellikle fintech, savunma sanayi ve kamu ihalelerinde “güvenli yazılım geliştirme süreci (Secure SDLC)” artık zorunlu hale gelmiştir.  
+    Bu yüzden AppSec uzmanı olan kişiler, hem güvenlik ekiplerinde hem yazılım ekiplerinde “köprü rolü” üstlenmektedir.
+  </p>
+  <p>
+    Devletin 2025’te başlattığı <strong>“Ulusal Siber Güvenli Yazılım Girişimi”</strong> programı,  
+    yerli uygulamalarda güvenlik denetimlerini teşvik etti.  
+    Böylece AppSec uzmanları için freelance ve danışmanlık alanında yeni fırsatlar doğdu.  
+  </p>
+
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior AppSec Specialist</td>
+        <td>0–2 yıl</td>
+        <td>40.000 – 60.000 TL</td>
+      </tr>
+      <tr>
+        <td>Mid-Level Application Security Engineer</td>
+        <td>2–5 yıl</td>
+        <td>70.000 – 100.000 TL</td>
+      </tr>
+      <tr>
+        <td>Senior AppSec / Secure SDLC Architect</td>
+        <td>5+ yıl</td>
+        <td>120.000 – 180.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    Bu alanda global çalışmak çok yaygındır.  
+    Özellikle uzaktan ABD veya Avrupa tabanlı AppSec danışmanlık projeleri yapan Türk mühendisler,  
+    3.000 – 6.000 USD arası aylık gelir elde etmektedir.
+  </p>
+
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    AppSec alanı hâlâ <strong>uzman açığı</strong> bulunan bir alandır.  
+    Ancak giriş seviyesi pozisyon azdır, çünkü şirketler genellikle “en az 1–2 yıl yazılım deneyimi” ister.  
+    Bu nedenle yazılım geliştiriciler veya test mühendisleri için AppSec’e geçiş daha kolaydır.  
+  </p>
+  <p>
+    Yeni başlayanlar için TryHackMe veya OWASP Juice Shop gibi platformlarda pratik yapmak,  
+    GitHub projelerine katkı sağlamak ve <em>bug bounty</em> deneyimi edinmek işe alımda büyük avantaj sağlar.
+  </p>
+
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Teknolojiyle iç içe, yaratıcı bir alan</li>
+    <li>Yazılım bilgisiyle güvenliği birleştirme fırsatı</li>
+    <li>Global freelance ve danışmanlık imkânı çok yüksek</li>
+    <li>AppSec uzmanları genellikle yüksek maaşlı pozisyonlardadır</li>
+    <li>Çeşitli sektörlerde çalışma olanağı (bankacılık, sağlık, kamu, SaaS)</li>
+  </ul>
+
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>Sürekli değişen framework ve teknolojilere adapte olma zorunluluğu</li>
+    <li>Yazılımcılarla iletişimde “denge” kurmak (güvenliği yavaşlatmadan sağlamak)</li>
+    <li>Derin teknik bilgi gerektirir — hem kod hem güvenlik bilmek zorundasın</li>
+    <li>Uygulama kaynak kodlarına erişim kısıtlı olduğunda denetim yapmak zorlaşabilir</li>
+  </ul>
+
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    AppSec, <strong>hem teknik hem analitik düşünebilen, kod yazmayı seven</strong> kişiler için idealdir.  
+    Yazılım geliştirip, aynı zamanda “nasıl kırılabilir” diye düşünmek seni heyecanlandırıyorsa, bu alan tam sana göredir.
+  </p>
+  <p>
+    Detaylı, araştırmayı seven, sabırlı ve yazılımla uğraşmayı seven biriysen,  
+    AppSec sana hem yüksek gelir hem global fırsatlar sunar.  
+    Ancak sadece teorik bilgiyle değil, bolca pratikle ilerlenmelidir.
+  </p>
+
+  <h3>Popüler Sertifikalar ve Kaynaklar</h3>
+  <ul>
+    <li>OWASP Top 10 & OWASP Web Security Testing Guide</li>
+    <li>TryHackMe – “Web Fundamentals” ve “OWASP Juice Shop” odaları</li>
+    <li>PortSwigger Web Security Academy (ücretsiz)</li>
+    <li>Certified Application Security Engineer (CASE)</li>
+    <li>Burp Suite Practitioner Certificate</li>
+  </ul>
+
+  <blockquote>
+    <p><em>“Kod yazmak bir sanattır; güvenli kod yazmak ise bu sanatın mühendislik halidir.”</em></p>
+  </blockquote>
+</section>
+
+<section id="3-cloud-security">
+  <h2>3. Bulut Güvenliği (Cloud Security)</h2>
+
+  <p>
+    Bulut güvenliği, verilerin ve uygulamaların fiziksel sunuculardan bağımsız olarak güvenli bir şekilde bulutta barındırılmasını sağlar.  
+    2025 itibarıyla Türkiye’de birçok şirket, verilerini artık yerinde sunucularda tutmak yerine AWS, Azure, Google Cloud veya yerli bulut sağlayıcıları (Türk Telekom Bulut, Turkcell Cloud) üzerinden yönetiyor.  
+    Bu durum, bulut güvenliği uzmanlarına talebi ciddi şekilde artırdı.
+  </p>
+
+  <p>
+    Bulut güvenliği yalnızca teknik önlemler değil, aynı zamanda <strong>politikalar, izin yönetimi ve uyumluluk</strong> ile ilgilidir.  
+    Yanlış yapılandırılmış bir bulut ortamı, bir şirketin yüz binlerce müşteri verisini riske atabilir. 2025’te Türkiye’de özellikle finans ve e-ticaret sektörlerinde bulut ihlalleri ciddi maliyetler doğurmaktadır.
+  </p>
+
+  <h3>Gereken Teknik Beceriler</h3>
+  <ul>
+    <li>AWS, Azure ve Google Cloud güvenlik servislerini bilmek (IAM, Security Hub, CloudTrail, VPC Security)</li>
+    <li>Bulut ağları ve sanal sunucuların yapılandırılması</li>
+    <li>Şifreleme yöntemleri ve veri sınıflandırması</li>
+    <li>Container güvenliği: Docker, Kubernetes ve RBAC yönetimi</li>
+    <li>Bulut izleme ve olay yönetimi: SIEM, CloudWatch, Azure Monitor</li>
+    <li>Yedekleme ve felaket kurtarma planlaması</li>
+  </ul>
+
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    Türkiye’de bulut adaptasyonu hızla artıyor. Özellikle KOBİ’ler bile artık verilerini buluta taşımakta.  
+    Büyük kurumlarda güvenlik hataları, mali kayıplara ve regülasyon ihlallerine yol açabiliyor.  
+    Bu yüzden bulut güvenliği uzmanları hem teknik hem de yönetim becerilerine sahip olmalıdır.  
+    Kamu kurumlarında KVKK ve siber güvenlik yasalarına uyum zorunludur.
+  </p>
+
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior Cloud Security Engineer</td>
+        <td>0–2 yıl</td>
+        <td>45.000 – 65.000 TL</td>
+      </tr>
+      <tr>
+        <td>Mid-Level Cloud Security Specialist</td>
+        <td>2–5 yıl</td>
+        <td>70.000 – 110.000 TL</td>
+      </tr>
+      <tr>
+        <td>Senior Cloud Security Architect</td>
+        <td>5+ yıl</td>
+        <td>120.000 – 180.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    Bulut güvenliği Türkiye’de hâlâ uzman açığı olan bir alan.  
+    Ancak sertifikalı adaylar (AWS Certified Security, Azure Security Engineer) çok hızlı iş bulabiliyor.  
+    Özellikle uzaktan çalışmaya uygun olması nedeniyle genç uzmanlar için global projelerde fırsatlar var.  
+    Zorluk, hızlı değişen servisler ve bulut teknolojilerini sürekli öğrenmeyi gerektiriyor.
+  </p>
+
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Her sektörde geçerli, iş bulma şansı yüksek</li>
+    <li>Global projelerde çalışma imkanı</li>
+    <li>Uzaktan çalışma ve danışmanlık fırsatları</li>
+    <li>Yüksek maaş potansiyeli</li>
+    <li>Kariyer ilerleme imkanı: Cloud Security Architect, DevSecOps gibi üst pozisyonlar</li>
+  </ul>
+
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>Hızla değişen servisler ve araçlar</li>
+    <li>Yanlış yapılandırmaların büyük risk oluşturması</li>
+    <li>İzleme ve uyumluluk gereksinimleri yoğun iş yükü yaratabilir</li>
+    <li>Global ve yerli standartların birlikte uygulanması karmaşık olabilir</li>
+  </ul>
+
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    Analitik düşünen, bulut teknolojilerine meraklı ve sürekli öğrenmeye istekli kişiler için ideal.  
+    Teknik becerilerini strateji ile birleştirip, farklı sektörlerde güvenlik çözümleri geliştirmeyi sevenler için bulut güvenliği mükemmel bir alan.
+  </p>
+
+  <h3>Popüler Sertifikalar ve Kaynaklar</h3>
+  <ul>
+    <li>AWS Certified Security – Specialty</li>
+    <li>Microsoft Certified: Azure Security Engineer Associate</li>
+    <li>Google Professional Cloud Security Engineer</li>
+    <li>Certified Cloud Security Professional (CCSP)</li>
+    <li>Pratik: Terraform + CloudFormation ile güvenli altyapı kurma deneyimi</li>
+  </ul>
+
+  <blockquote>
+    <p><em>“Bulut güvenliği, dijital çağda verilerin ve hizmetlerin görünmez kale duvarıdır.”</em></p>
+  </blockquote>
 </section>
 
 
+<section id="4-identity-and-access-management">
+  <h2>4. Kimlik ve Erişim Yönetimi (Identity and Access Management – IAM)</h2>
+
+  <p>
+    Kimlik ve Erişim Yönetimi (IAM), siber güvenliğin temel taşlarından biridir.  
+    <strong>AMAÇ:</strong> Kurum içindeki tüm kullanıcıların kim olduklarını doğrulamak ve hangi kaynaklara erişebileceklerini kontrol etmektir.  
+    Türkiye’deki şirketler ve devlet kurumları, özellikle 2025 itibarıyla KVKK, GDPR ve ISO 27001 uyumluluğu gereği IAM sistemlerini zorunlu hâle getirmiştir.
+  </p>
+
+  <p>
+    IAM sistemi, dijital dünyadaki “anahtar kart” gibi çalışır.  
+    Çalışanlar veya kullanıcılar sisteme giriş yaparken kimliklerini doğrular ve izinleri doğrultusunda sadece yetkili oldukları verilere erişir.  
+    Bu sayede hem iç tehditler hem de dış saldırılar minimize edilir.
+  </p>
+
+  <h3>Gereken Teknik Beceriler</h3>
+  <ul>
+    <li>Active Directory ve LDAP yönetimi</li>
+    <li>Single Sign-On (SSO) ve Multi-Factor Authentication (MFA) uygulamaları</li>
+    <li>Role-Based Access Control (RBAC) ve Attribute-Based Access Control (ABAC) prensipleri</li>
+    <li>Azure AD, Okta, Ping Identity, Keycloak gibi IAM platformları deneyimi</li>
+    <li>API güvenliği ve token yönetimi (OAuth, OpenID Connect, JWT)</li>
+    <li>Loglama, raporlama ve erişim denetimi (audit) becerileri</li>
+  </ul>
+
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    Türkiye’de büyük şirketler artık çalışanlarının ve müşterilerinin erişimlerini merkezi IAM çözümleri ile yönetiyor.  
+    Özellikle finans, telekom ve kamu kurumlarında IAM uzmanları kritik pozisyondadır.  
+    2025 itibarıyla uzaktan çalışma modeli yaygınlaştığından, güvenli erişim sistemleri daha stratejik hale gelmiştir.
+  </p>
+
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior IAM Specialist</td>
+        <td>0–2 yıl</td>
+        <td>40.000 – 60.000 TL</td>
+      </tr>
+      <tr>
+        <td>Mid-Level IAM Engineer</td>
+        <td>2–5 yıl</td>
+        <td>70.000 – 100.000 TL</td>
+      </tr>
+      <tr>
+        <td>Senior IAM Architect / Lead</td>
+        <td>5+ yıl</td>
+        <td>120.000 – 160.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    Türkiye’de IAM uzmanlığı hâlâ yüksek talep gören bir alan.  
+    Ancak çoğu pozisyon, hem teknik hem de yönetim yetkinliği istediğinden yeni mezunlar için başlangıç biraz zor olabilir.  
+    Kurumlar, IAM projelerini yalnızca deneyimli adaylarla yürütmeyi tercih eder.
+  </p>
+
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Hemen her sektörde kritik bir rol</li>
+    <li>Kurumsal ve devlet projelerinde uzun vadeli iş imkânı</li>
+    <li>Uzaktan ve global danışmanlık fırsatları</li>
+    <li>Orta ve üst düzey pozisyonlarda yüksek maaş potansiyeli</li>
+    <li>Uyumluluk ve risk yönetimi bilgisi kazandırır</li>
+  </ul>
+
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>Karmaşık erişim politikaları ve organizasyonel yapı</li>
+    <li>Hatalı yapılandırma büyük güvenlik riskleri yaratır</li>
+    <li>Çok sayıda kullanıcı ve sistem ile sürekli güncel kalmak gerekir</li>
+    <li>Güvenlik ile kullanıcı deneyimi arasında denge kurmak zor olabilir</li>
+  </ul>
+
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    Analitik, detaycı ve süreç odaklı kişiler için uygundur.  
+    İnsan ve teknoloji etkileşimini yönetmeyi seven, güvenlik ve yönetim süreçlerini birleştirmek isteyenler IAM’de başarılı olur.
+  </p>
+
+  <h3>Popüler Sertifikalar ve Kaynaklar</h3>
+  <ul>
+    <li>Microsoft Certified: Identity and Access Administrator Associate</li>
+    <li>Okta Certified Administrator</li>
+    <li>Certified Identity and Access Manager (CIAM)</li>
+    <li>Pratik: Azure AD Conditional Access Policies, SSO ve MFA yapılandırmaları</li>
+  </ul>
+
+  <blockquote>
+    <p><em>“Kimin neye erişebileceğini bilmeden bir sistem güvenli olamaz. Kimlik güvenliği, dijital güvenliğin merkezidir.”</em></p>
+  </blockquote>
+</section>
+
+<section id="5-cryptography">
+  <h2>5. Kriptografi (Cryptography)</h2>
+
+  <p>
+    Kriptografi, verilerin gizliliğini ve bütünlüğünü sağlayan siber güvenlik alanıdır.  
+    <strong>Temel amacı:</strong> Bilgiyi sadece yetkili kişilerin okuyabilmesini sağlamak için şifrelemektir.  
+    Günümüzde web sitelerinde HTTPS ile gördüğümüz küçük kilit simgesi, kriptografinin aktif olarak kullanıldığını gösterir.
+  </p>
+
+  <p>
+    2025 Türkiye’sinde kriptografi, finans sektörü, devlet kurumları ve telekomünikasyon gibi kritik alanlarda zorunlu hale gelmiştir.  
+    Özellikle uzaktan çalışma ve bulut sistemlerinin yaygınlaşması, güçlü şifreleme ve güvenli anahtar yönetimini kaçınılmaz kılmaktadır.
+  </p>
+
+  <h3>Gereken Teknik Beceriler</h3>
+  <ul>
+    <li>Simetrik şifreleme algoritmaları: AES, DES, ChaCha20</li>
+    <li>Asimetrik şifreleme algoritmaları: RSA, ECC, Diffie-Hellman</li>
+    <li>Hashing ve dijital imzalar: SHA-256, SHA-3, HMAC</li>
+    <li>PKI ve sertifika yönetimi: SSL/TLS, X.509</li>
+    <li>Kriptografi kütüphanelerini kullanabilme (OpenSSL, PyCryptodome, BouncyCastle)</li>
+    <li>Uygulama ve veri güvenliği entegrasyonu</li>
+  </ul>
+
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    Türkiye’de kriptografi alanında uzman talebi artmıştır.  
+    Bankalar ve ödeme sistemleri, yerli ödeme altyapıları ve dijital cüzdanlar için güçlü şifreleme çözümleri arıyor.  
+    Devlet kurumları, kritik altyapılar ve e-devlet uygulamalarında şifreleme standartlarını zorunlu kılmıştır.  
+    Özellikle KVKK ve GDPR uyumluluğu, veri şifreleme ve anahtar yönetimi konusundaki uzmanlık ihtiyacını artırmıştır.
+  </p>
+
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior Cryptography Engineer</td>
+        <td>0–2 yıl</td>
+        <td>45.000 – 65.000 TL</td>
+      </tr>
+      <tr>
+        <td>Mid-Level Crypto Specialist</td>
+        <td>2–5 yıl</td>
+        <td>70.000 – 110.000 TL</td>
+      </tr>
+      <tr>
+        <td>Senior Cryptography / Security Architect</td>
+        <td>5+ yıl</td>
+        <td>120.000 – 180.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    Kriptografi alanı Türkiye’de hâlâ uzman açığı bulunan bir bölgedir.  
+    Özellikle matematiksel ve algoritmik yetkinliği yüksek mühendisler, finans ve ödeme sistemleri şirketlerinde kolay iş bulabilir.  
+    Zorluk, teorik bilgi ile uygulama becerilerini birleştirmek ve sürekli değişen güvenlik standartlarına ayak uydurmaktır.
+  </p>
+
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Finans, telekom ve devlet projelerinde kritik rol</li>
+    <li>Yüksek maaş ve global çalışma imkânı</li>
+    <li>Güvenlik alanındaki temel bilgi ve yetkinliği kazandırır</li>
+    <li>Akademik ve AR-GE fırsatları geniştir</li>
+  </ul>
+
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>Matematiksel ve algoritmik yoğun çalışma gerektirir</li>
+    <li>Yanlış uygulama ciddi güvenlik açıklarına yol açabilir</li>
+    <li>Yerli ve global regülasyonları takip etmek zorunludur</li>
+    <li>Sürekli güncel kalmak gerekir</li>
+  </ul>
+
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    Matematik ve algoritmalara ilgi duyan, sabırlı, detaycı ve güvenli kodlama konusunda özenli kişiler için uygundur.  
+    Akademik düşünce yapısı ve uygulamalı deneyimi birleştirebilenler kriptografi alanında başarılı olur.
+  </p>
+
+  <h3>Popüler Sertifikalar ve Kaynaklar</h3>
+  <ul>
+    <li>Certified Encryption Specialist (EC-Council)</li>
+    <li>Certified Information Systems Security Professional (CISSP) – Cryptography Domain</li>
+    <li>Pratik: OpenSSL ile veri şifreleme ve çözme</li>
+    <li>Coursera: Cryptography I & II (Stanford University)</li>
+    <li>Crypto101 ve Practical Cryptography kitapları</li>
+  </ul>
+
+  <blockquote>
+    <p><em>“Kriptografi, veriyi görünmez ve okunamaz hâle getirerek dijital dünyada güvenliği sağlar.”</em></p>
+  </blockquote>
+</section>
+
+<section id="6-security-operations">
+  <h2>6. Güvenlik Operasyonları (Security Operations – SecOps)</h2>
+
+  <p>
+    Güvenlik Operasyonları (SecOps), bir kurumun dijital savunmasını 7/24 izleyen, tehditleri tespit eden ve yanıt veren kritik bir alandır.  
+    Eğer Ağ Güvenliği (Network Security) bir kaleyi inşa etmekse, SecOps o kalede sürekli nöbet tutan, alarmları takip eden ve anlık müdahale eden komuta merkezi ekibidir.
+  </p>
+
+  <p>
+    Türkiye’de 2025 itibarıyla bankalar, telekom şirketleri, e-ticaret platformları ve kamu kurumları büyük SecOps merkezleri kurmaktadır.  
+    Bu merkezlerde çalışanlar, hem yerli hem global saldırı tekniklerini takip ederek kurumları korur.  
+    Siber saldırılar artık sadece teknik değil, aynı zamanda sosyal mühendislik tabanlı olduğu için insan hatasını da minimize etmek SecOps’un görevlerindendir.
+  </p>
+
+  <h3>Gereken Teknik Beceriler</h3>
+  <ul>
+    <li>SIEM (Security Information and Event Management) araçları: Splunk, ELK, IBM QRadar, ArcSight</li>
+    <li>IDS/IPS sistemleri ve ağ trafiği analiz araçları</li>
+    <li>Threat hunting ve siber tehdit istihbaratı okuma</li>
+    <li>Olay müdahale planları (Incident Response – IR) ve prosedürleri</li>
+    <li>Log analizi, malware analizi ve forensik temeller</li>
+    <li>Python veya PowerShell ile otomasyon ve script yazabilme</li>
+  </ul>
+
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    Türkiye’de SecOps alanı hızla büyüyen bir sektördür.  
+    Özellikle finans, enerji ve kamu sektörlerinde ulusal güvenlik stratejileri kapsamında SecOps ekipleri kritik konumda.  
+    KOBİ’lerde ise genellikle küçük ölçekli SecOps veya Managed Security Service Provider (MSSP) kullanımı yaygındır.  
+    Uzaktan çalışmanın yaygınlaşması, SecOps uzmanlarına hem lokal hem global projelerde fırsatlar sunmaktadır.
+  </p>
+
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior SOC Analyst</td>
+        <td>0–2 yıl</td>
+        <td>40.000 – 60.000 TL</td>
+      </tr>
+      <tr>
+        <td>Mid-Level SOC Engineer / Incident Responder</td>
+        <td>2–5 yıl</td>
+        <td>70.000 – 110.000 TL</td>
+      </tr>
+      <tr>
+        <td>Senior SOC Manager / Security Operations Lead</td>
+        <td>5+ yıl</td>
+        <td>120.000 – 180.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    Türkiye’de SecOps uzmanlığı hâlâ çok talep gören bir alandır, fakat yeterli deneyim gerektirir.  
+    Junior seviyede pozisyonlar sınırlıdır, çünkü birçok şirket 1–2 yıl deneyimli adayları tercih etmektedir.  
+    Ancak pratik deneyim, sertifikalar ve cyber range platformlarında (TryHackMe, Hack The Box) deneyim kazananlar hızlıca iş bulabilir.
+  </p>
+
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Kritik ve sürekli talep gören alan</li>
+    <li>Global ve yerli firmalarda yüksek maaş potansiyeli</li>
+    <li>Uzaktan çalışma ve freelance danışmanlık fırsatları</li>
+    <li>Siber olaylara anlık müdahale deneyimi kazanılır</li>
+    <li>Cybersecurity ekosisteminin tüm alanları ile çalışma fırsatı</li>
+  </ul>
+
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>Yoğun stres ve sürekli tetikte olma</li>
+    <li>7/24 çalışma ve acil durum müdahaleleri</li>
+    <li>Hızla değişen tehdit ortamına uyum sağlama zorunluluğu</li>
+    <li>Çok sayıda araç ve log yönetimini öğrenme gerekliliği</li>
+  </ul>
+
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    Analitik düşünen, hızlı karar alabilen, stres yönetiminde başarılı ve sürekli öğrenmeye açık kişiler için uygundur.  
+    Hem teknik hem de operasyonel becerileri birleştirebilenler SecOps alanında başarılı olur.
+  </p>
+
+  <h3>Popüler Sertifikalar ve Kaynaklar</h3>
+  <ul>
+    <li>Certified SOC Analyst (CSA)</li>
+    <li>CompTIA Cybersecurity Analyst (CySA+)</li>
+    <li>EC-Council Certified Incident Handler (ECIH)</li>
+    <li>Splunk Core Certified User ve Admin</li>
+    <li>Pratik: Threat hunting, SIEM olay simülasyonları, malware analizi</li>
+  </ul>
+
+  <blockquote>
+    <p><em>“Bir saldırı gerçekleşmeden önce önlem almak önemlidir, ancak gerçek güvenlik operasyonları sahada ve gerçek zamanlı gerçekleşir.”</em></p>
+  </blockquote>
+</section>
+
+<section id="7-penetration-testing">
+  <h2>7. Penetrasyon Testi (Ethical Hacking / Pentesting)</h2>
+
+  <p>
+    Penetrasyon testi, bir sistemin veya ağın güvenliğini ölçmek için etik hackerlar tarafından yapılan kontrollü saldırılardır.  
+    Amaç, kötü niyetli kişiler sisteme girmeden önce zayıf noktaları tespit etmektir.
+  </p>
+
+  <p>
+    Türkiye’de 2025 itibarıyla penetrasyon testi, bankalar, telekom, e-ticaret ve devlet kurumları için zorunlu hale gelmiştir.  
+    KVKK ve ISO 27001 gibi regülasyonlar, şirketlerin yılda en az bir kez bağımsız pentest yaptırmasını öneriyor.  
+    Penetrasyon test uzmanları, siber saldırgan gibi düşünerek sistemdeki açıkları bulur ve raporlar.
+  </p>
+
+  <h3>Gereken Teknik Beceriler</h3>
+  <ul>
+    <li>Web uygulamaları güvenliği: SQL Injection, XSS, CSRF, RCE</li>
+    <li>Ağ güvenliği testleri: port taramaları, firewall bypass, sniffing</li>
+    <li>Social engineering ve phishing simülasyonları</li>
+    <li>Metasploit, Burp Suite, Nmap, Wireshark gibi araçların kullanımı</li>
+    <li>Exploit geliştirme ve reverse engineering temelleri</li>
+    <li>Raporlama ve zafiyet yönetimi</li>
+  </ul>
+
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    Türkiye’de pentest uzmanlığına talep hızla artmaktadır.  
+    Bankalar ve finans kuruluşları, fintech uygulamaları ve e-ticaret platformları sürekli güncel testler talep ediyor.  
+    Kamu kurumları da kritik altyapı ve e-devlet hizmetlerini korumak için pentest uzmanlarına ihtiyaç duyuyor.  
+    Ayrıca uzaktan çalışma ve global iş fırsatları, yetenekli etik hackerlar için cazip kariyer imkanları sunuyor.
+  </p>
+
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior Penetration Tester</td>
+        <td>0–2 yıl</td>
+        <td>45.000 – 65.000 TL</td>
+      </tr>
+      <tr>
+        <td>Mid-Level Ethical Hacker</td>
+        <td>2–5 yıl</td>
+        <td>70.000 – 110.000 TL</td>
+      </tr>
+      <tr>
+        <td>Senior Penetration Tester / Red Team Lead</td>
+        <td>5+ yıl</td>
+        <td>120.000 – 180.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    Türkiye’de pentest alanı hâlâ uzman açığı olan bir alandır.  
+    Ancak sertifikalı ve deneyimli adaylar için iş bulmak görece kolaydır.  
+    Zorluk, sürekli güncel kalmak, yeni exploit tekniklerini öğrenmek ve güvenlik araçlarını etkin şekilde kullanabilmektir.
+  </p>
+
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Her sektörde kritik güvenlik rolü</li>
+    <li>Uzaktan ve global projelerde çalışma imkânı</li>
+    <li>Yüksek maaş ve hızlı kariyer ilerlemesi</li>
+    <li>Teorik ve pratik güvenlik bilgisi kazandırır</li>
+    <li>Red Team veya Security Consultant gibi üst pozisyonlara geçiş kolaylığı</li>
+  </ul>
+
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>Stresli ve yoğun tempolu çalışma</li>
+    <li>Yaratıcı düşünme ve problem çözme gerekliliği</li>
+    <li>Hatalı test raporları ciddi risk oluşturabilir</li>
+    <li>Yeni güvenlik açıklarını ve exploitleri sürekli takip etmek gerekir</li>
+  </ul>
+
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    Analitik, meraklı, sabırlı ve problem çözme becerisi yüksek kişiler için uygundur.  
+    Teknik bilgiye ek olarak hacker düşünce tarzını anlayabilenler pentesting alanında başarılı olur.
+  </p>
+
+  <h3>Popüler Sertifikalar ve Kaynaklar</h3>
+  <ul>
+    <li>Certified Ethical Hacker (CEH)</li>
+    <li>Offensive Security Certified Professional (OSCP)</li>
+    <li>OSWE, eCPPT, LPT gibi ileri düzey penetrasyon test sertifikaları</li>
+    <li>Pratik: Hack The Box, TryHackMe, CTF platformları</li>
+    <li>Web uygulama güvenliği için OWASP Top 10 rehberleri</li>
+  </ul>
+
+  <blockquote>
+    <p><em>“Kale ne kadar sağlam olursa olsun, birisi denemeden gerçek güvenliği ölçemezsiniz. Pentest, bu denemeyi etik olarak yapan profesyonellerdir.”</em></p>
+  </blockquote>
+</section>
+
+<section id="8-dfir">
+  <h2>8. Dijital Adli Bilişim ve Olay Müdahalesi (DFIR – Digital Forensics and Incident Response)</h2>
+
+  <p>
+    Dijital Adli Bilişim ve Olay Müdahalesi (DFIR), siber güvenlikte saldırı sonrası süreçleri kapsayan kritik bir alandır.  
+    Eğer bir saldırgan sistemlerinizi aşarsa ve veri ihlali gerçekleşirse, DFIR uzmanları durumu analiz eder, hasarı sınırlamak için müdahale eder ve olayın kökenini araştırır.
+  </p>
+
+  <p>
+    Türkiye’de 2025 itibarıyla finans, telekom, devlet kurumları ve büyük e-ticaret şirketleri, olay müdahalesi ve dijital adli bilişim ekiplerini zorunlu hâle getirmiştir.  
+    KVKK ve ISO 27001 gibi regülasyonlar, olay sonrası raporlama ve adli delil toplama süreçlerini standartlaştırmaktadır.  
+    Bu nedenle DFIR uzmanları hem teknik hem de hukuki bilgiye sahip olmalıdır.
+  </p>
+
+  <h3>Gereken Teknik Beceriler</h3>
+  <ul>
+    <li>Incident Response (IR) prosedürleri ve kriz yönetimi</li>
+    <li>Malware ve ransomware analizi</li>
+    <li>Memory ve disk forensics (RAM, hard disk görüntüleri, log analizi)</li>
+    <li>Network forensics ve paket analizi (Wireshark, TCPDump)</li>
+    <li>Digital evidence collection ve chain-of-custody uygulamaları</li>
+    <li>SIEM entegrasyonu ve log korelasyonu</li>
+    <li>Python, PowerShell veya Bash ile otomasyon ve veri işleme</li>
+  </ul>
+
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    Türkiye’de DFIR alanında uzman sayısı sınırlıdır, bu nedenle yetenekli adaylar için iş bulma imkânı yüksektir.  
+    Özellikle bankalar, fintech şirketleri ve devlet kurumları kritik olaylara hızlı müdahale için DFIR ekipleri kurmaktadır.  
+    Uzaktan çalışma imkânları ile global projelerde deneyim kazanmak da mümkündür.
+  </p>
+
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior DFIR Analyst</td>
+        <td>0–2 yıl</td>
+        <td>45.000 – 65.000 TL</td>
+      </tr>
+      <tr>
+        <td>Mid-Level Incident Responder</td>
+        <td>2–5 yıl</td>
+        <td>70.000 – 110.000 TL</td>
+      </tr>
+      <tr>
+        <td>Senior DFIR / Team Lead</td>
+        <td>5+ yıl</td>
+        <td>120.000 – 180.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    Türkiye’de DFIR alanı hâlâ uzman açığı olan bir alandır.  
+    Ancak sertifikalı ve deneyimli adaylar için iş bulmak nispeten kolaydır.  
+    Zorluk, olay analizlerinde hızlı ve doğru karar almayı, teknik ve hukuki bilgi ile birleştirmeyi gerektirir.
+  </p>
+
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Kritik olaylara müdahale etme fırsatı</li>
+    <li>Her sektörde yüksek talep ve iş imkânı</li>
+    <li>Global danışmanlık ve uzaktan çalışma fırsatları</li>
+    <li>Analitik düşünme ve problem çözme becerilerini geliştirir</li>
+    <li>Yüksek maaş potansiyeli ve kariyer ilerleme fırsatı</li>
+  </ul>
+
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>Olaylar genellikle acil ve stresli</li>
+    <li>Güncel saldırı tekniklerini takip etmek gerekir</li>
+    <li>Hatalı analiz ciddi kurumsal kayıplara yol açabilir</li>
+    <li>Hukuki ve regülasyon gereksinimleri karmaşık olabilir</li>
+  </ul>
+
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    Analitik düşünen, detaycı, hızlı karar alabilen ve hem teknik hem hukuki perspektife sahip kişiler için uygundur.  
+    Kriz yönetimi ve dijital adli bilişim süreçlerini yönetebilenler DFIR alanında başarılı olur.
+  </p>
+
+  <h3>Popüler Sertifikalar ve Kaynaklar</h3>
+  <ul>
+    <li>GIAC Certified Incident Handler (GCIH)</li>
+    <li>GIAC Certified Forensic Analyst (GCFA)</li>
+    <li>EC-Council Certified Incident Handler (ECIH)</li>
+    <li>EnCase Certified Examiner (EnCE)</li>
+    <li>Pratik: Malware analysis, memory dump incelemesi, log korelasyonu</li>
+  </ul>
+
+  <blockquote>
+    <p><em>“Saldırı sonrası süreç, savunmanın gerçek testidir. DFIR uzmanları bu testin dedektifleridir.”</em></p>
+  </blockquote>
+</section>
+
+<section id="9-grc">
+  <h2>9. Yönetim, Risk ve Uyumluluk (Governance, Risk and Compliance – GRC)</h2>
+
+  <p>
+    GRC, siber güvenlikte teknoloji kadar strateji, yönetim ve uyumluluğa odaklanan bir alandır.  
+    <strong>AMAÇ:</strong> Kurumun güvenlik stratejisini belirlemek, riskleri yönetmek ve yasal/regülasyon gerekliliklerine uyum sağlamaktır.  
+    Türkiye’de 2025 itibarıyla KVKK, ISO 27001, GDPR ve sektöre özel regülasyonlar (bankacılık, sağlık, enerji) şirketleri GRC süreçlerini uygulamaya zorlamaktadır.
+  </p>
+
+  <p>
+    GRC uzmanları, kurumun güvenlik politikalarını oluşturur, riskleri değerlendirir ve süreçlerin uygun şekilde işlediğini denetler.  
+    Bu alan, teknik bilgi kadar yönetim ve organizasyon becerisi de gerektirir. Her bir karar, hem güvenliği hem de yasal uyumu etkiler.
+  </p>
+
+  <h3>Gereken Teknik ve Yönetsel Beceriler</h3>
+  <ul>
+    <li>Risk yönetimi ve risk değerlendirme metodolojileri (ISO 31000, NIST)</li>
+    <li>Uyumluluk standartları: KVKK, GDPR, ISO 27001, HIPAA, PCI-DSS</li>
+    <li>Politika ve prosedür geliştirme</li>
+    <li>Denetim süreçleri ve raporlama</li>
+    <li>Siber güvenlik stratejisi ve proje yönetimi</li>
+    <li>İç ve dış denetçilerle koordinasyon</li>
+  </ul>
+
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    Türkiye’de büyük şirketler ve devlet kurumları için GRC uzmanlığı kritik bir konumda.  
+    Özellikle finans, enerji, telekom ve sağlık sektörlerinde GRC süreçleri zorunlu.  
+    2025 itibarıyla kurumlar, veri güvenliği ve uyumluluk için hem yerli hem global standartları takip etmek zorunda.  
+    Bu nedenle GRC uzmanlarına yüksek talep var.
+  </p>
+
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior GRC Analyst</td>
+        <td>0–2 yıl</td>
+        <td>40.000 – 60.000 TL</td>
+      </tr>
+      <tr>
+        <td>Mid-Level GRC Specialist / Risk Analyst</td>
+        <td>2–5 yıl</td>
+        <td>70.000 – 110.000 TL</td>
+      </tr>
+      <tr>
+        <td>Senior GRC Manager / Compliance Lead</td>
+        <td>5+ yıl</td>
+        <td>120.000 – 180.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    GRC alanında Türkiye’de uzman açığı vardır; ancak iş bulmak deneyime bağlıdır.  
+    Junior seviyede giriş pozisyonları sınırlıdır, fakat sertifikalı ve deneyimli adaylar genellikle kısa sürede iş bulabilir.  
+    Zorluk, hem teknik hem de yönetim ve regülasyon bilgisini birleştirebilmektir.
+  </p>
+
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Kritik rol, her sektörde talep görür</li>
+    <li>Strateji ve yönetim deneyimi kazandırır</li>
+    <li>Global ve yerli firmalarda üst pozisyonlara geçiş imkânı</li>
+    <li>Uyumluluk süreçlerini yöneterek yüksek sorumluluk kazanılır</li>
+    <li>Uzaktan ve danışmanlık fırsatları bulunur</li>
+  </ul>
+
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>Yasal ve regülasyon değişikliklerini sürekli takip etme zorunluluğu</li>
+    <li>Teknik ve yönetim arasında denge kurmak gerekir</li>
+    <li>Şirket içi politika ve süreçleri etkin uygulamak bazen zordur</li>
+    <li>Riskleri doğru değerlendirmek ve önceliklendirmek gereklidir</li>
+  </ul>
+
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    Analitik düşünen, iletişimi güçlü, regülasyonlara hakim ve hem teknik hem stratejik düşünebilen kişiler için uygundur.  
+    Yönetim becerileri ile güvenlik ve uyumluluk süreçlerini entegre edebilenler başarılı olur.
+  </p>
+
+  <h3>Popüler Sertifikalar ve Kaynaklar</h3>
+  <ul>
+    <li>Certified in Risk and Information Systems Control (CRISC)</li>
+    <li>Certified Information Systems Auditor (CISA)</li>
+    <li>ISO 27001 Lead Implementer / Lead Auditor</li>
+    <li>CompTIA Security+ ve CySA+ (temel risk ve uyumluluk için)</li>
+    <li>Pratik: Risk değerlendirme raporları, uyumluluk denetimleri, politika geliştirme</li>
+  </ul>
+
+  <blockquote>
+    <p><em>“Güvenlik sadece teknolojiyle sağlanmaz; yönetim, risk ve uyumluluk ile desteklenmelidir.”</em></p>
+  </blockquote>
+</section>
+
+<section id="10-data-loss-prevention">
+  <h2>10. Veri Kaybını Önleme (Data Loss Prevention – DLP)</h2>
+
+  <p>
+    Veri Kaybını Önleme (DLP), kurumların hassas verilerini yetkisiz erişim veya sızma riskine karşı koruyan bir siber güvenlik alanıdır.  
+    <strong>Temel amacı:</strong> Gizli bilgilerin (müşteri listeleri, finansal veriler, gizli iş planları) yanlışlıkla veya kötü niyetle dışarı sızmasını engellemektir.
+  </p>
+
+  <p>
+    Türkiye’de 2025 itibarıyla KVKK, ISO 27001 ve sektör regülasyonları, veri güvenliği ve DLP uygulamalarını zorunlu hale getirmiştir.  
+    Özellikle bankacılık, finans, sağlık ve e-ticaret sektörlerinde DLP sistemleri kritik öneme sahiptir.
+  </p>
+
+  <h3>Gereken Teknik Beceriler</h3>
+  <ul>
+    <li>DLP çözümlerinin kurulumu ve yönetimi: Symantec, Forcepoint, Microsoft Purview</li>
+    <li>Veri sınıflandırma ve etiketleme metodolojileri</li>
+    <li>Olay yönetimi ve raporlama</li>
+    <li>Veri şifreleme ve erişim kontrol politikaları</li>
+    <li>Çalışan davranış analizi ve iç tehdit tespiti</li>
+    <li>Bulut ortamlarında veri kaybı önleme (Microsoft 365, Google Workspace, AWS)</li>
+  </ul>
+
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    Türkiye’de DLP uzmanlığına talep giderek artmaktadır.  
+    Büyük şirketler, KVKK uyumluluğu ve iş süreçlerinde veri güvenliğini sağlamak için DLP sistemlerine yatırım yapmaktadır.  
+    KOBİ’lerde ise genellikle bulut tabanlı DLP çözümleri tercih edilmektedir.
+  </p>
+
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior DLP Analyst</td>
+        <td>0–2 yıl</td>
+        <td>40.000 – 60.000 TL</td>
+      </tr>
+      <tr>
+        <td>Mid-Level DLP Specialist</td>
+        <td>2–5 yıl</td>
+        <td>70.000 – 110.000 TL</td>
+      </tr>
+      <tr>
+        <td>Senior DLP Engineer / Manager</td>
+        <td>5+ yıl</td>
+        <td>120.000 – 180.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    DLP alanında uzmanlık Türkiye’de hâlâ azdır, bu nedenle iş bulmak sertifikalı ve deneyimli adaylar için nispeten kolaydır.  
+    Zorluk, veri sınıflandırma, bulut ortamları ve farklı DLP araçlarını etkin şekilde yönetmeyi öğrenmek ve sürekli regülasyonları takip etmektir.
+  </p>
+
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Kritik verileri koruyarak şirketlerin güvenliğini artırır</li>
+    <li>Her sektörde talep görür ve yüksek maaş potansiyeli sunar</li>
+    <li>Bulut ve on-premise sistemleri kapsayan deneyim kazandırır</li>
+    <li>Uyumluluk ve risk yönetimi bilgisi sağlar</li>
+    <li>Uzaktan ve global projelerde çalışma fırsatı</li>
+  </ul>
+
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>Farklı veri kaynaklarını ve sistemleri yönetme zorluğu</li>
+    <li>Çalışan davranışlarını doğru analiz etme gerekliliği</li>
+    <li>Yanlış yapılandırma veri sızıntısına yol açabilir</li>
+    <li>Regülasyon değişikliklerini sürekli takip etmek gerekir</li>
+  </ul>
+
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    Analitik düşünen, dikkatli, güvenlik ve uyumluluk süreçlerine hakim kişiler için uygundur.  
+    Teknik bilgiye ek olarak süreç yönetimi ve raporlama becerisi olanlar DLP alanında başarılı olur.
+  </p>
+
+  <h3>Popüler Sertifikalar ve Kaynaklar</h3>
+  <ul>
+    <li>Certified Information Security Manager (CISM) – DLP modülleri</li>
+    <li>Certified Data Privacy Solutions Engineer (CDPSE)</li>
+    <li>Microsoft Certified: Security, Compliance, and Identity Fundamentals</li>
+    <li>Pratik: DLP politikaları kurma, veri sınıflandırma, olay simülasyonları</li>
+    <li>Forcepoint ve Symantec DLP eğitimleri</li>
+  </ul>
+
+  <blockquote>
+    <p><em>“Veriyi korumak, kurumun geleceğini korumaktır. DLP bu güvenliği sağlar.”</em></p>
+  </blockquote>
+</section>
+
+<section id="11-threat-intelligence">
+  <h2>11. Tehdit İstihbaratı (Threat Intelligence)</h2>
+
+  <p>
+    Tehdit İstihbaratı, bir kurumun siber güvenlik savunmalarını güçlendirmek için mevcut ve potansiyel saldırganlar hakkında bilgi toplama ve analiz etme sürecidir.  
+    Amaç, olası saldırıları önceden tahmin etmek ve önlem almaktır.
+  </p>
+
+  <p>
+    Türkiye’de 2025 itibarıyla bankalar, telekom ve kritik altyapı kurumları, SecOps ve DFIR ekiplerini desteklemek için tehdit istihbaratı ekipleri kurmaktadır.  
+    Özellikle Dark Web, hacker forumları ve global siber tehdit raporları takip edilmektedir.  
+    Bu sayede SecOps ekipleri, olası saldırılara proaktif önlem alabilir.
+  </p>
+
+  <h3>Gereken Teknik Beceriler</h3>
+  <ul>
+    <li>Open Source Intelligence (OSINT) toplama ve analizi</li>
+    <li>Dark Web araştırmaları ve hacker forumu takipleri</li>
+    <li>Tehdit actor ve APT (Advanced Persistent Threat) analizleri</li>
+    <li>SIEM ve SOC entegrasyonu ile bilgi paylaşımı</li>
+    <li>Phishing, malware ve zero-day exploit tespit süreçleri</li>
+    <li>Raporlama ve stratejik öneriler sunma</li>
+  </ul>
+
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    Türkiye’de tehdit istihbaratı alanı hâlâ yeni ve gelişmekte olan bir sektördür.  
+    Bankacılık, finans, enerji ve kamu sektörlerinde yetkin tehdit istihbaratı uzmanlarına yüksek talep vardır.  
+    Global tehditleri takip eden ve raporlayan uzmanlar, hem ulusal hem uluslararası projelerde çalışma imkânı bulmaktadır.
+  </p>
+
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior Threat Intelligence Analyst</td>
+        <td>0–2 yıl</td>
+        <td>45.000 – 65.000 TL</td>
+      </tr>
+      <tr>
+        <td>Mid-Level Threat Analyst</td>
+        <td>2–5 yıl</td>
+        <td>70.000 – 110.000 TL</td>
+      </tr>
+      <tr>
+        <td>Senior Threat Intelligence Specialist / Lead</td>
+        <td>5+ yıl</td>
+        <td>120.000 – 180.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    Türkiye’de yetkin tehdit istihbaratı uzmanları azdır, bu nedenle iş bulmak deneyimli ve sertifikalı adaylar için kolaydır.  
+    Zorluk, sürekli değişen saldırı taktiklerini takip etmek, global tehditleri analiz etmek ve proaktif önlemler önermektir.
+  </p>
+
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Proaktif siber savunma sağlama imkânı</li>
+    <li>Her sektörde talep gören kritik bir alan</li>
+    <li>Global projelerde çalışma ve yüksek maaş fırsatı</li>
+    <li>Sürekli öğrenme ve güncel kalma olanağı</li>
+    <li>SecOps ve DFIR ekiplerini destekleyerek stratejik rol oynama</li>
+  </ul>
+
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>Tehditler hızla değişir, sürekli güncel kalmak gerekir</li>
+    <li>Yoğun veri analizi ve raporlama gereklidir</li>
+    <li>Dark Web ve hacker forumu araştırmaları etik ve hukuki dikkat gerektirir</li>
+    <li>Yanlış istihbarat kararları ciddi güvenlik riskleri yaratabilir</li>
+  </ul>
+
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    Analitik düşünen, araştırmacı ruhlu, hızlı veri işleme ve raporlama becerisine sahip kişiler için uygundur.  
+    Global tehditleri takip edebilen ve SecOps/DFIR ekipleri ile koordinasyon sağlayabilen uzmanlar başarılı olur.
+  </p>
+
+  <h3>Popüler Sertifikalar ve Kaynaklar</h3>
+  <ul>
+    <li>Certified Threat Intelligence Analyst (CTIA)</li>
+    <li>GIAC Cyber Threat Intelligence (GCTI)</li>
+    <li>OSINT ve Maltego eğitimleri</li>
+    <li>Pratik: Threat feeds, Dark Web araştırmaları, phishing ve malware analizleri</li>
+  </ul>
+
+  <blockquote>
+    <p><em>“Savunmada en iyi strateji, düşmanı tanımaktır. Tehdit istihbaratı bu stratejiyi sağlar.”</em></p>
+  </blockquote>
+</section>
+
+<section id="12-security-architecture">
+  <h2>12. Güvenlik Mimarisi (Security Architecture)</h2>
+
+  <p>
+    Güvenlik Mimarisi, bir kurumun tüm bilgi teknolojisi altyapısının güvenli bir şekilde tasarlanması ve yapılandırılması sürecidir.  
+    <strong>Temel amacı:</strong> Sistemlerin, uygulamaların, verilerin ve kullanıcıların güvenliğini en baştan planlamak ve entegrasyonu sağlamaktır.
+  </p>
+
+  <p>
+    Türkiye’de 2025 itibarıyla güvenlik mimarisi, özellikle bankacılık, telekom ve kamu projelerinde kritik rol oynuyor.  
+    ISO 27001, KVKK ve GDPR gibi standartlar, güvenlik kontrollerinin baştan tasarlanmasını ve sürekli iyileştirilmesini şart koşuyor.
+  </p>
+
+  <h3>Gereken Teknik Beceriler</h3>
+  <ul>
+    <li>Ağ mimarisi tasarımı ve güvenlik katmanları planlaması</li>
+    <li>Uygulama güvenliği ve veri akışı analizi</li>
+    <li>Güvenlik çözümlerinin entegrasyonu: firewall, IDS/IPS, SIEM, DLP</li>
+    <li>Şifreleme, kimlik ve erişim yönetimi (IAM) sistemleri tasarımı</li>
+    <li>Bulut güvenliği ve hibrit ortam yönetimi</li>
+    <li>Politika ve prosedürlerin mimariye entegrasyonu</li>
+    <li>Risk bazlı güvenlik kararları alma ve iş gereksinimleri ile uyum</li>
+  </ul>
+
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    Türkiye’de güvenlik mimarları özellikle finans, e-ticaret ve devlet kurumları tarafından yüksek talep görmektedir.  
+    Karmaşık ve hibrit altyapılarda güvenlik mimarisini oluşturabilen uzmanlar, proje bazlı veya sürekli danışmanlık pozisyonlarında çalışabilir.  
+    Ayrıca global projelerde uzaktan çalışmak da mümkündür.
+  </p>
+
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior Security Architect</td>
+        <td>0–2 yıl</td>
+        <td>50.000 – 70.000 TL</td>
+      </tr>
+      <tr>
+        <td>Mid-Level Security Architect</td>
+        <td>2–5 yıl</td>
+        <td>80.000 – 120.000 TL</td>
+      </tr>
+      <tr>
+        <td>Senior Security Architect / Lead</td>
+        <td>5+ yıl</td>
+        <td>130.000 – 200.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    Güvenlik mimarları Türkiye’de hâlâ sınırlı sayıda bulunmaktadır.  
+    Deneyimli ve sertifikalı adaylar için iş bulmak görece kolaydır; ancak kompleks altyapıları yönetebilmek ve güncel güvenlik trendlerini takip etmek gereklidir.
+  </p>
+
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Kurumsal güvenlik stratejisinde kritik rol</li>
+    <li>Her sektörde yüksek talep ve maaş imkânı</li>
+    <li>Global projelerde danışmanlık veya lider pozisyon fırsatları</li>
+    <li>Güvenlik kontrol ve süreçlerini baştan tasarlama imkânı</li>
+    <li>Teknik ve yönetim becerilerini birlikte geliştirme</li>
+  </ul>
+
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>Karmaşık altyapılarda risk analizi ve tasarım yapma zorluğu</li>
+    <li>Sürekli değişen tehdit ve teknoloji trendlerini takip etmek gerekir</li>
+    <li>Yönetim ve teknik ekipler arasında koordinasyonu sağlamak zor olabilir</li>
+  </ul>
+
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    Hem teknik hem stratejik düşünebilen, analitik ve planlama becerisi yüksek kişiler için uygundur.  
+    Sistemleri baştan güvenli tasarlamak ve süreçleri optimize etmek isteyen uzmanlar bu alanda başarılı olur.
+  </p>
+
+  <h3>Popüler Sertifikalar ve Kaynaklar</h3>
+  <ul>
+    <li>Certified Information Systems Security Professional (CISSP)</li>
+    <li>Certified Information Security Manager (CISM)</li>
+    <li>TOGAF (Enterprise Architecture) + Security Mimarisi modülleri</li>
+    <li>Microsoft Certified: Security, Compliance, and Identity Architect</li>
+    <li>Pratik: Ağ ve uygulama mimarisi tasarımı, güvenlik kontrolleri entegrasyonu</li>
+  </ul>
+
+  <blockquote>
+    <p><em>“İyi bir güvenlik mimarisi, sistemleri korumak için inşa edilmiş sağlam bir temeldir.”</em></p>
+  </blockquote>
+</section>
+
+<section id="13-physical-security">
+  <h2>13. Fiziksel Güvenlik (Physical Security)</h2>
+
+  <p>
+    Dijital veriler ne kadar güvenli olursa olsun, hepsi fiziksel cihazlar üzerinde depolanır: sunucular, veri merkezleri, kablolar ve depolama üniteleri.
+    <strong>Fiziksel Güvenlik</strong>, bu donanımların çalınma, zarar görme veya yetkisiz erişim risklerine karşı korunmasını sağlar.
+  </p>
+
+  <p>
+    Türkiye’de 2025 itibarıyla özellikle bankalar, telekom ve büyük veri merkezleri, fiziksel güvenlik için ciddi yatırımlar yapmaktadır.
+    ISO 27001 ve KVKK gibi standartlar, fiziksel güvenliğin teknik güvenlik kadar önemli olduğunu vurgular.
+  </p>
+
+  <h3>Gereken Teknik ve Operasyonel Beceriler</h3>
+  <ul>
+    <li>Veri merkezi ve sunucu odası güvenlik standartları</li>
+    <li>Kapı erişim sistemleri, biyometrik okuyucular ve CCTV yönetimi</li>
+    <li>Çevresel güvenlik: Yangın, su baskını ve enerji kesintisine karşı önlemler</li>
+    <li>Fiziksel erişim politikaları ve denetimi</li>
+    <li>İzinsiz giriş algılama sistemleri ve alarm yönetimi</li>
+    <li>Fiziksel olay yönetimi ve raporlama</li>
+  </ul>
+
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    Türkiye’de veri merkezleri ve kritik altyapı tesislerinde fiziksel güvenlik standartları sürekli yükselmektedir.
+    Güvenlik personeli, teknolojik cihazlar ve prosedürlerin birlikte çalışmasıyla kurumlar, hem fiziksel hem siber tehditlere karşı korunur.
+    Özellikle büyük şehirlerdeki veri merkezlerinde fiziki güvenlik uzmanlarına talep yüksektir.
+  </p>
+
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Fiziksel Güvenlik Görevlisi / Junior</td>
+        <td>0–2 yıl</td>
+        <td>25.000 – 40.000 TL</td>
+      </tr>
+      <tr>
+        <td>Fiziksel Güvenlik Uzmanı / Orta Seviye</td>
+        <td>2–5 yıl</td>
+        <td>45.000 – 70.000 TL</td>
+      </tr>
+      <tr>
+        <td>Fiziksel Güvenlik Müdürü / Senior</td>
+        <td>5+ yıl</td>
+        <td>80.000 – 120.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    Fiziksel güvenlik alanında Türkiye’de iş bulmak görece kolaydır, ancak kritik tesislerde deneyim ve sertifikasyon önemlidir.
+    Zorluk, hem insan yönetimi hem de teknolojik sistemleri birlikte kullanmayı gerektirir.
+  </p>
+
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Fiziksel ve siber güvenliğin entegrasyonunu deneyimleme</li>
+    <li>Her sektörde ve büyük veri merkezlerinde iş imkânı</li>
+    <li>Yönetim ve denetim deneyimi kazandırır</li>
+    <li>Farklı teknolojik sistemlerle çalışma olanağı</li>
+  </ul>
+
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>24/7 görev ve vardiya sistemi</li>
+    <li>Fiziksel olaylara hızlı müdahale zorunluluğu</li>
+    <li>Fiziksel ve siber tehditleri birlikte yönetme gerekliliği</li>
+    <li>Güvenlik prosedürlerinin sıkı şekilde uygulanması gerekir</li>
+  </ul>
+
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    Organizasyon ve prosedür yönetiminde yetkin, kriz anında hızlı karar alabilen ve teknoloji ile insan yönetimini birleştirebilen kişiler için uygundur.
+  </p>
+
+  <h3>Popüler Sertifikalar ve Kaynaklar</h3>
+  <ul>
+    <li>Certified Protection Professional (CPP)</li>
+    <li>Physical Security Professional (PSP)</li>
+    <li>ISO 27001 Physical Security modülleri</li>
+    <li>Pratik: CCTV yönetimi, erişim kontrol sistemleri, olay simülasyonları</li>
+  </ul>
+
+  <blockquote>
+    <p><em>“Dijital güvenlik, sağlam bir fiziksel temelin üzerine inşa edilir.”</em></p>
+  </blockquote>
+</section>
+
+<section id="14-mobile-security">
+  <h2>14. Mobil Güvenlik (Mobile Security)</h2>
+
+  <p>
+    Günümüzde neredeyse herkes cebinde güçlü bir bilgisayar taşıyor: akıllı telefonlar, tabletler ve dizüstü bilgisayarlar.
+    Bu kolaylık, beraberinde çeşitli riskler de getirir. <strong>Mobil Güvenlik</strong>, mobil cihazların ve üzerlerindeki verilerin korunmasını sağlar.
+  </p>
+
+  <p>
+    Türkiye’de 2025 itibarıyla mobil cihazlar kurumsal süreçlerin bir parçası hâline geldi. Bankacılık, e-ticaret, sağlık ve devlet uygulamaları, mobil güvenlik için özel politikalar uygulamaktadır.
+  </p>
+
+  <h3>Gereken Teknik Beceriler</h3>
+  <ul>
+    <li>Mobil cihaz yönetimi (Mobile Device Management – MDM) sistemleri</li>
+    <li>Mobil uygulama güvenliği ve kod incelemesi</li>
+    <li>Mobil ağ ve Wi-Fi güvenliği</li>
+    <li>Cihaz şifreleme ve uzaktan silme (remote wipe) uygulamaları</li>
+    <li>Mobil tehdit tespiti: kötü amaçlı uygulamalar, phishing ve SMS/MMS saldırıları</li>
+    <li>BYOD (Bring Your Own Device) politikalarının yönetimi</li>
+  </ul>
+
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    Türkiye’de mobil güvenlik uzmanlığına ihtiyaç her geçen gün artıyor.
+    Özellikle bankacılık ve finans sektörü, mobil uygulamalarda güvenlik açıklarını tespit etmek ve kullanıcı verilerini korumak için uzman ekipler istihdam ediyor.
+    E-ticaret ve sağlık sektörlerinde de mobil cihazlar üzerinden veri sızıntılarını önlemek kritik bir konu.
+  </p>
+
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior Mobile Security Analyst</td>
+        <td>0–2 yıl</td>
+        <td>40.000 – 60.000 TL</td>
+      </tr>
+      <tr>
+        <td>Mid-Level Mobile Security Specialist</td>
+        <td>2–5 yıl</td>
+        <td>70.000 – 110.000 TL</td>
+      </tr>
+      <tr>
+        <td>Senior Mobile Security Engineer / Lead</td>
+        <td>5+ yıl</td>
+        <td>120.000 – 180.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    Mobil güvenlik Türkiye’de hızla büyüyen bir alan.
+    İş bulmak, deneyim ve sertifikasyonla doğru orantılı. Junior seviyede pozisyonlar sınırlı olabilir, ancak uzman ve sertifikalı adaylar hızla iş bulabilir.
+    Zorluk, hem mobil cihaz hem de uygulama güvenliğini aynı anda yönetmektir.
+  </p>
+
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Kurumsal ve kişisel cihazları koruma deneyimi kazandırır</li>
+    <li>Her sektörde talep gören bir alan</li>
+    <li>BYOD ve MDM yönetimi ile geniş beceri seti</li>
+    <li>Global mobil güvenlik projelerine katılım imkânı</li>
+    <li>Uzaktan çalışma fırsatları ve danışmanlık olanakları</li>
+  </ul>
+
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>Farklı cihaz ve işletim sistemlerini yönetme zorluğu</li>
+    <li>Uygulama güvenliği ve ağ güvenliğini birlikte yönetmek gerekir</li>
+    <li>Mobil tehditler hızla değişir, sürekli güncel kalmak gerekir</li>
+  </ul>
+
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    Hem teknik hem analitik düşünebilen, mobil uygulama ve ağ güvenliği konularına ilgi duyan kişiler için uygundur.
+    BYOD ve MDM süreçlerini yönetebilen, sorunları hızlı çözebilen uzmanlar başarılı olur.
+  </p>
+
+  <h3>Popüler Sertifikalar ve Kaynaklar</h3>
+  <ul>
+    <li>Certified Mobile Security Professional (CMSP)</li>
+    <li>CompTIA Security+ ve CySA+ (temel mobil güvenlik için)</li>
+    <li>Pratik: MDM kurulumu, mobil uygulama güvenliği testleri, uzaktan silme ve şifreleme senaryoları</li>
+    <li>OWASP Mobile Security Project kaynakları</li>
+  </ul>
+
+  <blockquote>
+    <p><em>“Mobil cihazlar modern dünyanın kapılarıdır; onları korumak, şirketinizi korumaktır.”</em></p>
+  </blockquote>
+</section>
+
+<section id="15-iot-security">
+  <h2>15. Nesnelerin İnterneti Güvenliği (IoT Security)</h2>
+
+  <p>
+    Nesnelerin İnterneti (IoT), internete bağlanan tüm akıllı cihazları ifade eder: buzdolapları, saatler, trafik ışıkları, fabrika sensörleri ve daha fazlası.  
+    <strong>IoT Güvenliği</strong>, bu cihazların siber saldırılara açık hale gelmesini önler ve veri güvenliğini sağlar.
+  </p>
+
+  <p>
+    Türkiye’de 2025 itibarıyla IoT cihazlarının kullanımı sanayi 4.0, akıllı şehirler, sağlık ve ev otomasyon sistemlerinde hızla yaygınlaşıyor.  
+    Bu nedenle IoT güvenliği, hem endüstriyel hem de bireysel cihazların korunması açısından kritik bir alan hâline geldi.
+  </p>
+
+  <h3>Gereken Teknik Beceriler</h3>
+  <ul>
+    <li>IoT cihaz ağlarını ve protokollerini güvenli yapılandırma</li>
+    <li>Firmware güvenliği ve güncellemelerin yönetimi</li>
+    <li>IoT cihazlarının kimlik doğrulama ve şifreleme yöntemleri</li>
+    <li>Botnet ve kötü amaçlı cihaz kullanımını tespit etme</li>
+    <li>IoT cihazlarının bulut entegrasyonu ve güvenlik politikaları</li>
+    <li>Endüstriyel IoT (IIoT) ve SCADA sistemlerinde güvenlik önlemleri</li>
+  </ul>
+
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    Türkiye’de özellikle üretim tesisleri, enerji santralleri ve akıllı şehir projelerinde IoT güvenliği kritik bir gerekliliktir.  
+    Büyük firmalar, IoT cihazlarını korumak için özel güvenlik ekipleri kurmaktadır.  
+    IoT güvenlik uzmanlarına talep giderek artmaktadır, çünkü bu cihazlar hem fiziksel hem siber riskler taşır.
+  </p>
+
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior IoT Security Analyst</td>
+        <td>0–2 yıl</td>
+        <td>45.000 – 65.000 TL</td>
+      </tr>
+      <tr>
+        <td>Mid-Level IoT Security Specialist</td>
+        <td>2–5 yıl</td>
+        <td>70.000 – 120.000 TL</td>
+      </tr>
+      <tr>
+        <td>Senior IoT Security Engineer / Lead</td>
+        <td>5+ yıl</td>
+        <td>130.000 – 200.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    IoT güvenliği alanında Türkiye’de uzman sayısı sınırlıdır.  
+    Bu nedenle iş bulmak deneyimli ve sertifikalı adaylar için nispeten kolaydır.  
+    Zorluk, farklı cihaz türleri, protokoller ve üreticilerle uyumlu güvenlik çözümleri geliştirmektir.
+  </p>
+
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Yeni ve hızla büyüyen bir uzmanlık alanı</li>
+    <li>Her sektörde ve özellikle endüstri projelerinde yüksek talep</li>
+    <li>IoT ve IIoT alanında teknik uzmanlık kazandırır</li>
+    <li>Global projelerde çalışma ve danışmanlık fırsatları</li>
+    <li>Siber ve fiziksel güvenliği birleştirme deneyimi</li>
+  </ul>
+
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>Cihazlar küçük ve düşük maliyetli olduğu için güvenlik açıkları yaygındır</li>
+    <li>Firmware ve protokol çeşitliliği karmaşıklık yaratır</li>
+    <li>IoT cihazları genellikle sürekli güncellenmelidir</li>
+    <li>Fiziksel ve siber tehditleri birlikte yönetmek gerekir</li>
+  </ul>
+
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    Analitik düşünen, cihaz ve ağ güvenliği konusunda teknik bilgi sahibi, hem siber hem fiziksel güvenliği birleştirebilen uzmanlar için uygundur.
+  </p>
+
+  <h3>Popüler Sertifikalar ve Kaynaklar</h3>
+  <ul>
+    <li>Certified IoT Security Practitioner (CIoTSP)</li>
+    <li>GIAC Industrial Cybersecurity Certification (GICSP)</li>
+    <li>CompTIA Security+ (temel IoT güvenliği için)</li>
+    <li>Pratik: IoT ağ yapılandırması, firmware güvenliği testleri, botnet tespit simülasyonları</li>
+    <li>OWASP IoT Top Ten ve IoT Security Foundation kaynakları</li>
+  </ul>
+
+  <blockquote>
+    <p><em>“Her akıllı cihaz bir kapıdır; onları korumak, tüm sistemi korumaktır.”</em></p>
+  </blockquote>
+</section>
+
+<section id="16-security-awareness-and-training">
+  <h2>16. Güvenlik Farkındalığı ve Eğitim (Security Awareness and Training)</h2>
+
+  <p>
+    En güçlü güvenlik sistemleri bile dikkatsiz bir insan tarafından aşılabilir.  
+    <strong>Güvenlik Farkındalığı</strong>, çalışanların siber tehditleri tanımasını ve bunlardan kaçınmasını öğretir: phishing e-postaları, sosyal mühendislik saldırıları, şifre hataları ve daha fazlası.
+  </p>
+
+  <p>
+    Türkiye’de 2025 itibarıyla, büyük şirketler ve devlet kurumları siber farkındalık programlarını zorunlu hale getirmiştir.  
+    Bu sayede çalışanlar, organizasyonun ilk savunma hattı hâline gelmektedir.
+  </p>
+
+  <h3>Gereken Teknik ve Eğitsel Beceriler</h3>
+  <ul>
+    <li>Siber güvenlik temel bilgilerini çalışanlara aktarabilme</li>
+    <li>Simülasyon ve phishing testleri oluşturma</li>
+    <li>İç tehditleri tanıma ve raporlama süreçlerini öğretme</li>
+    <li>Çalışanlara güvenli şifre ve kimlik doğrulama yöntemlerini öğretme</li>
+    <li>Politika ve prosedürlerin anlaşılır şekilde iletilmesini sağlama</li>
+  </ul>
+
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    Türkiye’de farkındalık ve eğitim programları, özellikle bankacılık, telekom ve kamu sektöründe yaygındır.  
+    Kurumlar, hem teknik hem davranışsal önlemlerle siber saldırılara karşı koruma sağlar.  
+    Farkındalık eğitimleri, çalışanların günlük iş süreçlerinde güvenli davranışları benimsemesini amaçlar.
+  </p>
+
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior Security Awareness Specialist</td>
+        <td>0–2 yıl</td>
+        <td>35.000 – 55.000 TL</td>
+      </tr>
+      <tr>
+        <td>Mid-Level Security Awareness Trainer</td>
+        <td>2–5 yıl</td>
+        <td>60.000 – 95.000 TL</td>
+      </tr>
+      <tr>
+        <td>Senior Security Awareness Manager / Lead</td>
+        <td>5+ yıl</td>
+        <td>100.000 – 150.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    Türkiye’de siber farkındalık uzmanları giderek artan bir talep ile karşı karşıyadır.  
+    Özellikle büyük şirketlerde ve bankacılık sektöründe bu uzmanlara duyulan ihtiyaç yüksektir.  
+    Zorluk, eğitimleri ilgi çekici ve uygulanabilir şekilde tasarlamak ve sürekli güncel kalmaktır.
+  </p>
+
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Organizasyonun tüm çalışanlarını savunmanın bir parçası yapma imkânı</li>
+    <li>Her sektörde talep gören bir alan</li>
+    <li>Yüksek etkili ve görünür bir rol</li>
+    <li>İç güvenlik kültürünü güçlendirme fırsatı</li>
+  </ul>
+
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>Çalışanların ilgisini çekmek ve alışkanlıklarını değiştirmek zor olabilir</li>
+    <li>Programların sürekli güncel tutulması gerekir</li>
+    <li>Simülasyon ve testler sırasında yanlış pozitifler veya moral düşüklüğü yaşanabilir</li>
+  </ul>
+
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    İletişim becerisi yüksek, eğitici ve öğretici yetenekleri olan, teknik bilgiyi anlaşılır şekilde aktarabilen kişiler için uygundur.  
+    İnsan psikolojisini anlayan ve sürekli öğrenmeye açık kişiler başarılı olur.
+  </p>
+
+  <h3>Popüler Sertifikalar ve Kaynaklar</h3>
+  <ul>
+    <li>Certified Security Awareness Practitioner (CSAP)</li>
+    <li>EC-Council Certified Security Awareness Training</li>
+    <li>CompTIA Security+ temel bilgileri</li>
+    <li>Pratik: Phishing testleri, farkındalık simülasyonları, siber eğitim içerik üretimi</li>
+  </ul>
+
+  <blockquote>
+    <p><em>“Siber güvenlik sadece teknolojiyle değil, insanlarla başlar.”</em></p>
+  </blockquote>
+</section>
+
+<section id="17-disaster-recovery-and-business-continuity">
+  <h2>17. Felaket Kurtarma ve İş Sürekliliği (Disaster Recovery & Business Continuity – DR/BC)</h2>
+
+  <p>
+    Felaketler her zaman planlanamaz: Siber saldırılar, doğal afetler, enerji kesintileri veya veri merkezi arızaları.  
+    <strong>Felaket Kurtarma (DR)</strong> ve <strong>İş Sürekliliği (BC)</strong>, şirketin her koşulda faaliyetlerini sürdürebilmesini sağlar.
+  </p>
+
+  <p>
+    Türkiye’de 2025 itibarıyla, büyük ölçekli finans, telekom, üretim ve kamu kurumları, DR/BC planlarını zorunlu hâle getirmiştir.  
+    DR/BC uzmanları, sistemleri sadece yeniden çalıştırmakla kalmaz, kritik iş fonksiyonlarının aksamasını önler.
+  </p>
+
+  <h3>Gereken Teknik ve Yönetim Becerileri</h3>
+  <ul>
+    <li>Veri yedekleme ve replikasyon stratejileri</li>
+    <li>Bulut ve hibrit ortam felaket kurtarma çözümleri</li>
+    <li>İş Sürekliliği planlama ve kritik süreç analizi</li>
+    <li>Olay yönetimi ve kriz senaryolarının tasarımı</li>
+    <li>Risk değerlendirmesi ve önceliklendirme</li>
+    <li>Personel eğitimleri ve tatbikatlar</li>
+  </ul>
+
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    Türkiye’de DR/BC uzmanlığı özellikle finans, telekom ve enerji sektörlerinde çok talep görmektedir.  
+    Büyük veri merkezleri ve kurumsal sistemler için DR planları, sadece teknolojik değil aynı zamanda iş süreçlerini de kapsar.  
+    Uzmanlar hem teknik hem de operasyonel süreçleri yönetmek zorundadır.
+  </p>
+
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior DR/BC Analyst</td>
+        <td>0–2 yıl</td>
+        <td>40.000 – 60.000 TL</td>
+      </tr>
+      <tr>
+        <td>Mid-Level DR/BC Specialist</td>
+        <td>2–5 yıl</td>
+        <td>70.000 – 110.000 TL</td>
+      </tr>
+      <tr>
+        <td>Senior DR/BC Manager / Lead</td>
+        <td>5+ yıl</td>
+        <td>120.000 – 180.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    Türkiye’de DR/BC uzmanlarına talep yüksek, ancak deneyimli ve sertifikalı adaylar tercih ediliyor.  
+    Zorluk, hem teknoloji hem iş süreçleri açısından kompleks planlar geliştirmek ve kriz yönetimini koordine etmektir.
+  </p>
+
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Kurumsal süreçler üzerinde stratejik etki</li>
+    <li>Her sektörde kritik bir uzmanlık alanı</li>
+    <li>Kriz anında liderlik ve koordinasyon deneyimi</li>
+    <li>Global ve büyük ölçekli projelerde çalışma fırsatları</li>
+    <li>Felaketlere karşı organizasyonu hazır tutma sorumluluğu</li>
+  </ul>
+
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>Planlama ve tatbikatlar sürekli güncel tutulmalıdır</li>
+    <li>Kriz anında yüksek stres ve hızlı karar alma gerekliliği</li>
+    <li>Teknik ve operasyonel süreçleri birlikte yönetmek zor olabilir</li>
+    <li>Yedekleme ve kurtarma stratejileri karmaşıktır</li>
+  </ul>
+
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    Analitik düşünen, kriz yönetiminde yetkin, hem teknik hem iş süreçlerini anlayabilen uzmanlar için uygundur.  
+    Planlama, koordinasyon ve risk yönetimi becerileri yüksek kişiler bu alanda başarılı olur.
+  </p>
+
+  <h3>Popüler Sertifikalar ve Kaynaklar</h3>
+  <ul>
+    <li>Certified Disaster Recovery Engineer (CDRE)</li>
+    <li>Certified Business Continuity Professional (CBCP)</li>
+    <li>ISO 22301 İş Sürekliliği Yönetimi Standardı</li>
+    <li>Pratik: Felaket senaryosu tatbikatları, yedekleme testleri, kriz yönetimi simülasyonları</li>
+  </ul>
+
+  <blockquote>
+    <p><em>“İyi planlanmış bir DR/BC stratejisi, felaketi bir kesintiden ibaret hâle getirir.”</em></p>
+  </blockquote>
+</section>
+
+<section id="18-secure-software-development-lifecycle-sdlc">
+  <h2>18. Güvenli Yazılım Geliştirme Yaşam Döngüsü (Secure Software Development Lifecycle – SDLC)</h2>
+
+  <p>
+    Yazılım geliştirme aşamaları: tasarım, geliştirme, test ve dağıtım olarak sıralanır.  
+    <strong>Güvenli SDLC</strong>, güvenliğin her aşamada yerleşmesini sağlar ve sonradan eklenen güvenlik önlemlerinin eksikliklerini ortadan kaldırır.
+  </p>
+
+  <p>
+    Türkiye’de 2025 itibarıyla yazılım geliştirme projeleri, bankacılık, sağlık ve e-ticaret gibi sektörlerde güvenli SDLC prensiplerine uygun olarak yürütülmektedir.  
+    Bu sayede hem KVKK hem de ISO 27001 standartlarına uyum sağlanır.
+  </p>
+
+  <h3>Gereken Teknik ve Yönetim Becerileri</h3>
+  <ul>
+    <li>Tehdit modelleme ve risk değerlendirmesi</li>
+    <li>Kod inceleme ve statik/dinamik analiz teknikleri</li>
+    <li>Güvenli yazılım tasarımı ve mimarisi</li>
+    <li>Uygulama güvenlik testleri (penetrasyon testleri, fuzzing vb.)</li>
+    <li>Yazılım dağıtımı sırasında güvenlik kontrollerinin uygulanması</li>
+    <li>Geliştiriciler ve güvenlik ekipleri arasında koordinasyon sağlama</li>
+  </ul>
+
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    Türkiye’de özellikle büyük bankalar ve yazılım şirketleri SDLC’ye güvenlik katmayı öncelikli hale getirmiştir.  
+    Junior yazılım geliştirici pozisyonlarında güvenlik bilgisi giderek önemli bir kriter hâline gelmiştir.  
+    Senior ve lider pozisyonlarda SDLC süreçlerini yönetmek stratejik bir görevdir.
+  </p>
+
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior Secure SDLC Developer</td>
+        <td>0–2 yıl</td>
+        <td>40.000 – 60.000 TL</td>
+      </tr>
+      <tr>
+        <td>Mid-Level Secure SDLC Engineer</td>
+        <td>2–5 yıl</td>
+        <td>70.000 – 120.000 TL</td>
+      </tr>
+      <tr>
+        <td>Senior Secure SDLC Architect / Lead</td>
+        <td>5+ yıl</td>
+        <td>130.000 – 200.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    Türkiye’de güvenli yazılım geliştirme uzmanlarına talep yüksek, ancak Junior seviyelerde deneyim sınırlıdır.  
+    Zorluk, güvenlik ve geliştirme ekiplerini koordineli çalıştırmak ve modern tehditleri yazılım yaşam döngüsüne entegre etmektir.
+  </p>
+
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Yazılım geliştirme süreçlerinde güvenliği baştan dahil etme imkânı</li>
+    <li>Her sektörde kritik ve aranan bir uzmanlık alanı</li>
+    <li>Geliştirici ve güvenlik ekipleri ile ortak çalışma deneyimi</li>
+    <li>Global yazılım projelerinde çalışma fırsatları</li>
+    <li>KVKK ve ISO 27001 uyumluluğu ile yasal riskleri azaltma</li>
+  </ul>
+
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>Geliştirme hızını güvenlik ile dengelemek gerekir</li>
+    <li>SDLC süreçleri sürekli güncellenmeli ve iyileştirilmelidir</li>
+    <li>Uygulama güvenlik testleri teknik bilgi ve deneyim gerektirir</li>
+    <li>Farklı platform ve teknolojilere uyum sağlamak zordur</li>
+  </ul>
+
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    Hem yazılım geliştirme hem de güvenlik konusunda bilgisi olan, analitik düşünebilen, problem çözme yeteneği yüksek kişiler için uygundur.
+  </p>
+
+  <h3>Popüler Sertifikalar ve Kaynaklar</h3>
+  <ul>
+    <li>Certified Secure Software Lifecycle Professional (CSSLP)</li>
+    <li>OWASP Application Security Verification Standard (ASVS)</li>
+    <li>Pratik: Kod incelemeleri, statik/dinamik analiz, tehdit modelleme, güvenli mimari tasarım</li>
+    <li>ISO 27001 ve KVKK uygulama rehberleri</li>
+  </ul>
+
+  <blockquote>
+    <p><em>“Güvenliği yazılımın sonuna eklemek yerine, her satır kodun temel taşı hâline getirin.”</em></p>
+  </blockquote>
+</section>
+
+<section id="19-endpoint-security">
+  <h2>19. Uç Nokta Güvenliği (Endpoint Security)</h2>
+
+  <p>
+    Şirket ağına bağlanan her bilgisayar, dizüstü, telefon veya tablet bir <strong>uç nokta (endpoint)</strong> olarak adlandırılır.  
+    <strong>Uç Nokta Güvenliği</strong>, bu cihazların siber saldırılara karşı korunmasını sağlar ve ağ güvenliğinin kritik bir parçasıdır.
+  </p>
+
+  <p>
+    Türkiye’de 2025 itibarıyla, özellikle finans, telekom, devlet ve üretim sektörlerinde uç nokta güvenliği büyük önem kazanmıştır.  
+    Uzaktan çalışma yaygınlaştıkça, uç noktaların korunması şirketlerin veri güvenliği için kritik hâle gelmiştir.
+  </p>
+
+  <h3>Gereken Teknik Beceriler</h3>
+  <ul>
+    <li>Antivirüs ve anti-malware yazılımlarını yönetme</li>
+    <li>Host tabanlı güvenlik duvarları (firewall) ve kontrol politikaları</li>
+    <li>Modern Endpoint Detection & Response (EDR) araçlarının kullanımı</li>
+    <li>Uç noktalarda şifreleme ve kimlik doğrulama uygulamaları</li>
+    <li>Uzaktan cihaz yönetimi ve izleme</li>
+    <li>Olay müdahalesi ve tehdit analizi</li>
+  </ul>
+
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    Türkiye’de kurumsal ağlar genişledikçe uç nokta güvenliği önemi artmıştır.  
+    Bankalar, kamu kurumları ve büyük firmalar uç nokta güvenliği için özel ekipler kurmaktadır.  
+    Endpoint Security uzmanları hem teknik beceri hem de saldırı analiz yeteneği ile aranır.
+  </p>
+
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior Endpoint Security Analyst</td>
+        <td>0–2 yıl</td>
+        <td>40.000 – 60.000 TL</td>
+      </tr>
+      <tr>
+        <td>Mid-Level Endpoint Security Specialist</td>
+        <td>2–5 yıl</td>
+        <td>70.000 – 110.000 TL</td>
+      </tr>
+      <tr>
+        <td>Senior Endpoint Security Engineer / Lead</td>
+        <td>5+ yıl</td>
+        <td>120.000 – 180.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    Türkiye’de uç nokta güvenliği uzmanlarına talep oldukça yüksek, ancak deneyimli ve sertifikalı adaylar tercih edilmektedir.  
+    Zorluk, farklı cihaz tipleri ve işletim sistemleri için eş zamanlı güvenlik politikaları uygulamak ve sürekli izlemektir.
+  </p>
+
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Şirket ağı güvenliğinin kritik bir parçası olma</li>
+    <li>Her sektörde talep gören uzmanlık alanı</li>
+    <li>Uzaktan çalışma ve global projelerde rol alma fırsatı</li>
+    <li>Gelişmiş güvenlik araçlarını kullanarak pratik deneyim kazanma</li>
+    <li>Proaktif tehdit tespit ve müdahale yetenekleri kazandırır</li>
+  </ul>
+
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>Farklı cihaz ve işletim sistemlerini yönetmek karmaşıktır</li>
+    <li>Uç noktaları sürekli izlemek ve tehditleri tespit etmek gerekir</li>
+    <li>EDR araçlarını doğru yapılandırmak teknik bilgi gerektirir</li>
+    <li>Bir uç nokta zayıf olduğunda tüm ağ risk altına girebilir</li>
+  </ul>
+
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    Hem ağ güvenliği hem de cihaz güvenliği konularında bilgisi olan, analitik düşünebilen ve proaktif müdahale yeteneğine sahip kişiler için uygundur.
+  </p>
+
+  <h3>Popüler Sertifikalar ve Kaynaklar</h3>
+  <ul>
+    <li>CompTIA Security+</li>
+    <li>EC-Council Certified Ethical Hacker (CEH)</li>
+    <li>Microsoft Certified: Security, Compliance, and Identity Fundamentals</li>
+    <li>Pratik: EDR araçları, antivirüs yönetimi, olay müdahale senaryoları</li>
+    <li>MITRE ATT&CK ve saldırı simülasyonları</li>
+  </ul>
+
+  <blockquote>
+    <p><em>“Bir uç nokta zayıfsa, tüm kale tehlikede demektir.”</em></p>
+  </blockquote>
+</section>
+
+
+<section id="20-legal-and-regulatory">
+  <h2>20. Hukuki ve Düzenleyici (Legal and Regulatory)</h2>
+
+  <p>
+    Siber güvenlik sadece teknik bir mesele değildir; aynı zamanda hukuki ve düzenleyici boyutları da vardır.
+    <strong>Hukuki ve Düzenleyici alan</strong>, yasalar, veri koruma yönetmelikleri, ihlal bildirimleri ve delil yönetimini kapsar.
+  </p>
+
+  <p>
+    Türkiye’de 2025 itibarıyla KVKK (Kişisel Verilerin Korunması Kanunu), bankacılık ve sağlık sektörüne yönelik özel yönetmelikler, siber güvenlik standartları (ISO 27001) ve AB GDPR uyumluluğu kritik öneme sahiptir.
+    Hukuk uzmanları, veri toplama, saklama ve ihlal yanıtlarının tümünün yasal standartlara uygun olmasını sağlar.
+  </p>
+
+  <h3>Gereken Beceriler</h3>
+  <ul>
+    <li>KVKK, GDPR ve ilgili düzenlemeleri anlamak</li>
+    <li>Siber olayların yasal boyutunu yönetebilmek</li>
+    <li>Veri ihlali bildirim süreçlerini tasarlamak ve uygulamak</li>
+    <li>Delil toplama ve dijital adli süreçlerde rehberlik etmek</li>
+    <li>Hukuki ve operasyonel ekiplere danışmanlık sağlamak</li>
+    <li>Sözleşme ve risk yönetimi süreçlerine destek olmak</li>
+  </ul>
+
+  <h3>Türkiye’de Durum (Kasım 2025)</h3>
+  <p>
+    Türkiye’de kurumlar, özellikle finans ve sağlık sektöründe, siber olayların hukuki boyutlarını yönetebilecek uzmanlara ihtiyaç duymaktadır.
+    Bu alanda çalışanlar, olayların yasal süreçlere uygun şekilde raporlanmasını ve ilgili düzenlemelere tam uyumu sağlar.
+  </p>
+
+  <h3>Maaş Aralıkları (Kasım 2025, Türkiye)</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Pozisyon</th>
+        <th>Deneyim</th>
+        <th>Ortalama Maaş (TL)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Junior Legal & Compliance Analyst</td>
+        <td>0–2 yıl</td>
+        <td>45.000 – 65.000 TL</td>
+      </tr>
+      <tr>
+        <td>Mid-Level Legal & Compliance Specialist</td>
+        <td>2–5 yıl</td>
+        <td>70.000 – 110.000 TL</td>
+      </tr>
+      <tr>
+        <td>Senior Legal & Compliance Manager / Lead</td>
+        <td>5+ yıl</td>
+        <td>120.000 – 180.000+ TL</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>İş Bulma Zorluğu</h3>
+  <p>
+    Türkiye’de siber güvenlik hukuku ve düzenlemeleri konusunda uzmanlaşmış kişi sayısı sınırlıdır.
+    Bu nedenle, deneyimli ve sertifikalı uzmanlar için iş bulma nispeten kolaydır.
+    Zorluk, yasal mevzuatlar ile teknik güvenlik önlemleri arasında denge kurmaktır.
+  </p>
+
+  <h3>Avantajları</h3>
+  <ul>
+    <li>Siber güvenlik ve hukuki süreçleri birleştiren nadir uzmanlık alanı</li>
+    <li>Her sektörde kritik ve aranan bir pozisyon</li>
+    <li>Hukuki riskleri azaltma ve şirket uyumluluğunu sağlama imkânı</li>
+    <li>Global düzenlemeler ve uluslararası standartlarla çalışabilme fırsatı</li>
+  </ul>
+
+  <h3>Zorlukları</h3>
+  <ul>
+    <li>Düzenlemeler ve standartlar sürekli değişmektedir</li>
+    <li>Teknik ekipler ile hukuk ekipleri arasında koordinasyon gerektirir</li>
+    <li>Olay müdahalesinde hızlı ve doğru karar alma baskısı vardır</li>
+  </ul>
+
+  <h3>Kimler İçin Uygun?</h3>
+  <p>
+    Hukuk, uyumluluk ve siber güvenlik konularına ilgi duyan, detay odaklı, analitik düşünebilen ve iletişim becerileri güçlü kişiler için uygundur.
+  </p>
+
+  <h3>Popüler Sertifikalar ve Kaynaklar</h3>
+  <ul>
+    <li>Certified Information Privacy Professional (CIPP/E – Avrupa ve GDPR odaklı)</li>
+    <li>ISO 27001 Lead Implementer / Auditor</li>
+    <li>Certified Information Systems Security Professional (CISSP) – Compliance ve Governance modülleri</li>
+    <li>KVKK ve GDPR resmi dokümanları ve rehberleri</li>
+    <li>Pratik: Veri ihlali tatbikatları, uyumluluk denetimleri, sözleşme ve politika oluşturma</li>
+  </ul>
+
+  <blockquote>
+    <p><em>“Siber güvenlik sadece teknolojiyi değil, aynı zamanda yasaları ve politikaları da kapsar.”</em></p>
+  </blockquote>
+</section>
+
+
+  <!-- Conclusion -->
+  <h2 id="conclusion-a-world-of-interconnected-defenses">
+    Sonuç: Birbirine Bağlı Savunmalar Dünyası
+  </h2>
+  <p>
+    Ne öğrendik? Siber güvenlik tek bir iş değil — bir ekosistemdir.
+    Her alan bir rol oynar, tıpkı canlı bir organizmadaki organlar gibi.
+    Ağ Güvenliği çevreyi korur. AppSec ve SDLC iç sistemleri güçlendirir.
+    DFIR ve SecOps tehditlere yanıt verir. GRC ve Hukuk,
+    tüm yapıyı yasal ve stratejik olarak hizalar. Farkındalık da insan unsurunu güçlendirir.
+  </p>
+  <p>
+    Birlikte, bu 20 alan dirençli, uyarlanabilir ve akıllı bir savunma sistemi oluşturur.
+    Dijital dünya her zaman yeni tehditlerle karşılaşacak,
+    ancak bu alanların birlikte çalışması sayesinde verilerimizi — ve geleceğimizi — güvende tutabiliriz.
+  </p>
+
       </article>
     </div>
+
+
+
   </main>
 
   <footer>
