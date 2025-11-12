@@ -84,6 +84,25 @@ header {
   animation: shine 3s linear infinite;
 }
 
+.links {
+    color: #1E90FF;             /* Açık mavi */
+    text-decoration: underline; /* Alt çizgi */
+}
+
+.links:visited {
+    color: #551A8B;             /* Ziyaret edilmiş link rengi */
+}
+
+.links:hover {
+    text-decoration: underline; /* Hover’da alt çizgi kalır */
+    color: #63B3ED;             /* Hover’da biraz daha açık mavi */
+}
+
+.links:active {
+    color: #104E8B;             /* Tıklanırken koyu mavi */
+}
+
+
 @keyframes shine {
   to {
     background-position: 200% center;
