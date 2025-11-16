@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Penetrasyon Raporu Nasıl Yazılır?</title>
+  <link rel="stylesheet" href="../../../css/blogs.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo-group">
+          <h1 class="logo">Subutay Ülgen</h1>
+          <p class="logo-text">Web Uygulama Güvenliği Uzmanı</p>
+        </div>
+        <div class="menu-toggle" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../../../"><i class="fas fa-user"></i> Hakkımda</a></li>
+            <li><a href="../../../referanslarım/"><i class="fas fa-award"></i> Referanslar</a></li>
+            <li><a href="../../../projelerim/"><i class="fas fa-code"></i> Projeler</a></li>
+            <li><a href="../../../servislerim/"><i class="fas fa-cogs"></i> Hizmetler</a></li>
+            <li><a href="../../../blog/" class="active"><i class="fas fa-blog"></i> Blog</a></li>
+            <li><a href="../../../iletisim/"><i class="fas fa-envelope"></i> İletişim</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <article>
+        <h1 id="baslik">🛡️ Penetration Test Raporu Nasıl Yazılmalı?</h1>
+
+        <p class="lead">
+        Siber güvenlikte en önemli konularan biri, iyi penetrasyon testi raporu yazmaktır. Red team çalısanları olarak isinizi ne kadar iyi yaparsanız yapın, ne kadar kritik zafiyetler bulursanız bulun isin en sonunda bunları bi penetrasyon testi raporu ile sunmanız gerekir. Ve sirketlerin sizle çalısmaya devam edit etmeyeceğinide bu raporunuz belirler. Bu isin sonundaki rapor sizin müsterinize sattığınız ürününüzdür bu yüzden rapor yazmak pentestteki en zor ve öğrenilmesi en sart konudur.
+        </p>
+
+        <figure id="youtube">
+          <h2>Konuyla ilgili Youtube videom</h2>
+          <a href="https://www.youtube.com/watch?v=ycE1ZaeLKU4" target="_blank" ><img src="Fotolar/rapor_yazmak.png" alt="Siber güvenlik programlama dilleri" /> </a>
+        </figure>
+
+        <nav aria-labelledby="toc-heading">
+          <h3 id="toc-heading">İçindekiler</h3>
+          <ol class="toc">
+            <li><a href="#baslamadan">Baslamadan Önce</a></li>
+            <li><a href="#kapak">Kapak</a></li>
+            <li><a href="#içindekiler">İçindekiler</a></li>
+            <li><a href="#yönetici">Yönetici Özeti</a></li>
+            <li><a href="#bulguözeti">Bulgu Özeti</a></li>
+            <li><a href="#öneri">Öneri ve Tavsiye</a></li>
+            <li><a href="#Ciddiyet">Ciddiyet Skalası</a></li>
+            <li><a href="#kapsam">Kapsam Beyanı</a></li>
+            <li><a href="#final">Final Raporu</a></li>
+            <li><a href="#metodoloji">Metodolojiler</a></li>
+            <li><a href="#bilgi">Bilgi Toplama</a></li>
+            <li><a href="#kapsam">Kapsam Beyanı</a></li>
+            <li><a href="#enumetion">Enumetion</a></li>
+          </ol>
+        </nav>
+
+        <section id="baslamadan">
+          <h2>Bloğa Baslamadan Önce</h2>
+          <p>
+            Bu blogada anlattığım format benim kendi kullandığım raporlama formatıdır github üzerinden sizde bu formata ulasıp kendinize göre değistirebilirisniz. Bunu yapabilmeniz için formatı ".pdf" formatı yerine ".odt" formatı ile yayınladım. Yazı içersinde göreceğiniz her baslık ise bence bir raporun içinde olmazsa olmz olan seylerdir yukarı kısımdaki içindekiler kısmından linklerine bakabilirsiniz.
+          </p>
+        </section>
+
+
+        <section id="kapak">
+          <h2>Markanızı Hatırlatan Bir Kapak</h2>
+          <p>
+          Bu kısım her ne kadar çokça atlansada olduka önemlidir. Yazdığınız raporun ilk sayfasında markanızı yada freelencer olarak çalısıyorsanız sizi tanıtacak bir imzanız olmalıdır olmalıdır. Aynı zamanda raporun içinde sayfa içindede logonuzu rahatsız etmicek sekilde barındırabilirisiniz.
+          </p>
+        </section>
+
+        <section id="içindekiler">
+          <h2>İçindekiler Kısmı</h2>
+          <p>
+            Eğer elektronik ortamdan gönderiyorsanız bölümle sayfayı linklemeyi unutmak aptallık olucaktır. Aynı sekilde kesinlikle sayfaların numarasını da içindekiler ksmına kesinlike koymlısınız eğer raporunuz çıktı alırsa bu numaralar hayat kuratarır. Baskasında görmediğim ama benim olmazsa olmazım olan bi kuralı sizinle paylasıcağım. Bizim raporlarımızı hem mühendisler hemde teknik bilgisi daha az olan yöneticiler okur ve biz eğer içindekiler kısmındaki yazıları buna yönelik olarak renklendirirsek yöneticiler nereleri okumaları gerektiğini bilirler. Ben bu renklendirmeyi kendi taslağımda da görebileceğiniz üzere mavi ve kırmızı renkle yapıyorum yöneticiler kırmızı yazı ile yazılmıs bölümleri okuyorlar teknikerlerde mavi renkle olanları böylece yöneticilerin kafa karısıklıpı çoğu durumda engelleniyor. 
+          </p>
+        </section>
+
+        <section id="yönetici">
+          <h2>Yönetici Özeti</h2>
+          <p>
+            Yönetici özeti raporumuzdaki en önemli iki yerden biridir. Raporun bu kısmını yöneticiler okuyacağı için teknik bi dilden kaçınmalıyız ve kesinlikle yazım ve noktalama isaretlerine dikakt etmeliyiz(sakın yazım ve noktalama isaretlerini düzeltmesi için cloudtaki ai modellerini kullanmayın bunun sonucunda sirketin zafiyetlerini dıs bi faktörle paylasmıs sayılırsınız.). Bu bölümde olabildiğicne teknik olmadan kapsam beyanı yapmalı ve bulduğumuz zafiyetleri bildirmeliyiz. Burada zafiyetlerimizi bildirirken zafiyetin ismini söylemek yerine sonucunu açıklamak çok daha etkilidir.
+          </p>
+        </section>
+
+        <section id="bulguözeti">
+          <h2>Bulgu Özeti</h2>
+          <p>
+            Bu kısım hem teknikerler hemde yöneticiler tarafından okunabilir. Burada zafiyetleri detaylıca anlaatmak yerine kısaca nerde bulunduğundan ne olduğundan ve düzeltilmezse ne ile sonuçlanacağından bahsetmeliyiz. Eğer daha detaylıca ne olduğunu öğrenmek isterlerse diye en altına da bulgunun ne olduğunu anlatan bi kısım eklemeliyiz.
+          </p>
+       </section>
+        
+          <section id="öneri">
+          <h2>Öneri ve Tavsiye</h2>
+          <p>
+            Bu bölümde zafiyetlerinizi yeniden açıklaamanıza gerek yoktur nasıl kapatılacağına dair soyut öneriler vermelisiniz. 
+          </p>  
+            <ol>
+              <li>x Güvenlik artırılmalıdır </li>
+              <li>✓ İlgili Fonksiyona kullanıcı kimliği doğrulama fonksiyonu eklenmelidir</li>
+            </ol>
+         <p>
+           Zafiyetin kritikliğine göre öncelik sırası verin. Eğer zafiyet açıkça isimledirilemisse nasıl kapanacağına dair malalelerin linkini koyabilirsiniz. Bu bölümde yapıcı olmalısınız yıkıcı değil
+         </p>
+       </section>
+
+        <section id="Ciddiyet">
+          <h2>Ciddiyet Skalası</h2>
+          <p>
+            Herseyden önce ciddiyet yada önem skalası yazarken önemli olan müsterinizin için neyin daha önemli olduğudur. Bu yüzden sirketle bu konuda kesinlikle konusmalsınız. Konustuktan ve sirketin neye önem verdiğinzi anladıktan sonra çesitki renklerle ciddiyet sklasını olusturunuz. sklananızda zafiyetleri açıklamak yerine sadece ismini söylemeniz yeterlidir aynı zamand bulgu özeti kısmınada linkleyebilirsiniz.
+          </p>
+       </section>
+
+        <section id="kapsam">
+          <h2>Kapsam Beyanı</h2>
+          <p>
+            Test edilecek varlıkları, sınırları, izin verilen metodları, İzin düzeyi, erisim tipi(white; gray; black box),hariç tutulan teknikler ve hariç tutulan noktaları kesinlikle lsita haline yazılız. Buraya pentest öcnesinde imzalanan anlasmanızı linkleyebilrisiniz. Bu kurallara uymazsanız hukuki problemler yasayabileceğinizisöylemem gerek yoktur tabikide.
+          </p>
+       </section>
+
+        <section id="final">
+          <h2>Final Raporu</h2>
+          <p>
+            Burası daha çok bi baslıktır bu bölmden sonra teknik kısma geçtiğimizi anlatır.
+          </p>
+       </section>
+
+        <section id="metodoloji">
+          <h2>Metodoloji</h2>
+          <p>
+            Bu bölümde nasıl hacklediğimizi değil hacklerken hangi sırayı izlediğimiz önemlidir (OSSTMM NIST SP800-115 vb) 
+          </p>
+       </section>
+
+        <section id="bilgi">
+          <h2>Bilgi Toplama</h2>
+          <p>
+            Enumetiondan daha basit bi sekilde sadece hedefler çıkartılır. Yani "Hedef bulunmaya çalısılır hedeflerin bilgileri değil."
+          </p>
+       </section>
+
+        <section id="enumetion">
+          <h2>Enumetion</h2>
+          <p>
+            Bu bölümde hedeflere dair bilgiler vardır bolca ss konulmalıdır. Olabildeğince çok tarama ssi olmalıdır. bilgisayarladaki siletim sistemlerinden web servislerine uygulamaların yazıldığı programlama dilinden o dilin sürümüne ne kadar bilgi o kadr iyidir.
+          </p>
+       </section>
+
+        <section id="zafiyetdegerlendirilmesi">
+          <h2>Zafiyet Değerlendirilmesi</h2>
+          <p>
+            Bu bölümde zafiyetleri olabileceğinin en teknik haliyle yazarsınız, neden bu açığın olustuğunu yazmalısınız. Yine bu bölümdede zafiyetlerin daha genel açıklamalarının olduğu makalelerin linklerini koyabiliriz. Ve bu bölümdeki en önemli amaç raporu okuyan kisininde bizim yaptığımız seyleri yaparak aynı zafiyeti exploit edebilmesidir iste bu yüzden bolca ss ve terminaldeki codeleri kopyalanabilir sekilde rapora dahil etmelisiniz.
+          </p>
+       </section>
+
+        <section id="exploit">
+          <h2>Exploit</h2>
+          <p>
+            Bi önceki bölümde zafiyetleri teker teker açıkladık ama burda adım adım yaptığımız bütün hamleleri yazıcağız ve nasıl hacklediğimizi anlatıcağız böylece hem ayrı ayrı zafiyetlerin neler olduğunu anlasılacak hemde bütünsel bi bakıs açısıyla olaylar görülecek.
+          </p>
+       </section>
+
+        <section id="clearing">
+          <h2>Home Clearing</h2>
+          <p>
+            Pentestte ev temizleme kavramı sızma esnasında sisteme yüklenen payloadların, olusutrulan hesapların ve benzeri yapılan değsikliklerinn silinip verilen yetkilerin geri alınmasınıdır burası değisken değil bütün raporalrda aynıdır. Bunu müsteriye bildirmek çoğu durumda iyi bi görünüm sağlar
+          </p>
+       </section>
+      
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="copyright">&copy; 2025 Subutay Ülgen - Tüm Hakları Saklıdır</div>
+        <div class="social-links">
+          <a href="https://github.com/Subutay-CyberSecurity" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+          <a href="https://www.youtube.com/@subutay-cybersecurity" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+          <a href="https://x.com/Subutay_Ulgen" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../../js/main.js"></script>
+</body>
+</html>
+
