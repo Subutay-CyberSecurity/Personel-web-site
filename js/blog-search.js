@@ -18,13 +18,15 @@ document.addEventListener('DOMContentLoaded', function() {
   function removeHighlights() {
     const highlightedElements = document.querySelectorAll('.highlight');
     highlightedElements.forEach(element => {
-      element.outerHTML = element.innerHTML;
+      if (element && element.parentNode) {
+        element.outerHTML = element.textContent;
+      }
     });
   }
 
   // Function to filter blog posts based on search term and category
   function filterBlogPosts() {
-    const searchTerm = searchInput.value.trim();
+    const searchTerm = searchInput.value.trim().toLowerCase();
     const selectedCategory = categoryFilter.value.toLowerCase();
 
     // Remove previous highlights
@@ -34,17 +36,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
     blogPosts.forEach(post => {
       const titleElement = post.querySelector('h3');
-      const excerptElement = post.querySelector('.post-excerpt');
-      const title = titleElement.textContent.toLowerCase();
-      const excerpt = excerptElement.textContent.toLowerCase();
-      const tags = Array.from(post.querySelectorAll('.tag')).map(tag => tag.textContent.toLowerCase());
-      const category = post.querySelector('.post-category').classList[1]; // Get the second class which is the category name
+      const title = titleElement ? titleElement.textContent.toLowerCase() : '';
+      
+      // Get tags text content
+      const tagElements = post.querySelectorAll('.tag');
+      const tags = Array.from(tagElements).map(tag => tag.textContent.toLowerCase());
+      
+      // Get category from the post-category element
+      const categoryElement = post.querySelector('.post-category');
+      let category = '';
+      if (categoryElement && categoryElement.classList.length > 1) {
+        // Get the second class which should be the category name (e.g., 'guvenlik', 'gelistirme', etc.)
+        category = categoryElement.classList[1].toLowerCase();
+      }
       
       // Check if post matches search term and category
       const matchesSearch = !searchTerm || 
-                           title.includes(searchTerm.toLowerCase()) || 
-                           excerpt.includes(searchTerm.toLowerCase()) || 
-                           tags.some(tag => tag.includes(searchTerm.toLowerCase()));
+                           title.includes(searchTerm) || 
+                           tags.some(tag => tag.includes(searchTerm));
       
       const matchesCategory = selectedCategory === 'all' || category === selectedCategory;
       
@@ -54,12 +63,17 @@ document.addEventListener('DOMContentLoaded', function() {
         visibleCount++;
         
         // Highlight search terms if there's a search term
-        if (searchTerm) {
+        if (searchTerm && titleElement) {
           const highlightedTitle = highlightText(titleElement.textContent, searchTerm);
           titleElement.innerHTML = highlightedTitle;
           
-          const highlightedExcerpt = highlightText(excerptElement.textContent, searchTerm);
-          excerptElement.innerHTML = highlightedExcerpt;
+          // Also highlight matching tags
+          tagElements.forEach(tag => {
+            if (tag.textContent.toLowerCase().includes(searchTerm)) {
+              const highlightedTag = highlightText(tag.textContent, searchTerm);
+              tag.innerHTML = highlightedTag;
+            }
+          });
         }
       } else {
         post.style.display = 'none';
